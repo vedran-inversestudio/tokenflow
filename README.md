@@ -1,4 +1,4 @@
-# Tokenflow Design System
+# Tokenflow
 
 A modern design system pipeline that syncs Figma/Token Studio design tokens with your codebase, ensuring pixel-perfect, up-to-date UI components and documentation via Storybook.
 
