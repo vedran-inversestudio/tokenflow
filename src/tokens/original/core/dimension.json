@@ -1,0 +1,151 @@
+{
+  "pillow": {
+    "core": {
+      "dimension": {
+        "0": {
+          "$type": "dimension",
+          "$value": "0"
+        },
+        "6": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 6.25"
+        },
+        "12": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 12.5"
+        },
+        "25": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 25"
+        },
+        "37": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 37.5"
+        },
+        "50": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 50"
+        },
+        "57": {
+          "$type": "dimension",
+          "$value": "9px"
+        },
+        "75": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 75"
+        },
+        "100": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 100"
+        },
+        "125": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 125"
+        },
+        "150": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 150"
+        },
+        "175": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 175"
+        },
+        "200": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 200"
+        },
+        "225": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 225"
+        },
+        "250": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 250"
+        },
+        "300": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 300"
+        },
+        "350": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 350"
+        },
+        "400": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 400"
+        },
+        "450": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 450"
+        },
+        "500": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 500"
+        },
+        "600": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 600"
+        },
+        "700": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 700"
+        },
+        "800": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 800"
+        },
+        "900": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 900"
+        },
+        "1000": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 1000"
+        },
+        "1100": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 1100"
+        },
+        "1200": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 1200"
+        },
+        "1300": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 1300"
+        },
+        "1400": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 1400"
+        },
+        "1500": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 1500"
+        },
+        "1600": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 1600"
+        },
+        "2000": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 2000"
+        },
+        "2400": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.base} * 2400"
+        },
+        "base": {
+          "$type": "dimension",
+          "$value": "{pillow.core.size.SCALE} / 100"
+        }
+      },
+      "size": {
+        "SCALE": {
+          "$type": "sizing",
+          "$value": "16",
+          "$description": "base-scale of all size-related tokens (size, space, dimension). The default is 1rem = 16(px). If you change it, it will change all size-related tokens. :)"
+        }
+      }
+    }
+  }
+}

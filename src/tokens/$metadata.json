@@ -1,0 +1,12 @@
+{
+  "tokenSetOrder": [
+    "core/color",
+    "core/dimension",
+    "core/font",
+    "mode/default",
+    "style/border",
+    "style/size",
+    "style/typography",
+    "components/input"
+  ]
+}

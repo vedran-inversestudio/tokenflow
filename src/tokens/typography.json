@@ -1,0 +1,278 @@
+{
+  "pillow": {
+    "typography": {
+      "title": {
+        "xxs": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.strong}",
+            "fontSize": "{pillow.core.font.size.scaled.0_75x}",
+            "lineHeight": "{pillow.core.font.line-height.medium}"
+          },
+          "$description": "singleline text, used for labels on top of inputs, as titles inside components, pages or panels"
+        },
+        "xs": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.strong}",
+            "fontSize": "{pillow.core.font.size.scaled.0_87x}",
+            "lineHeight": "{pillow.core.font.line-height.medium}"
+          },
+          "$description": "singleline text, used for labels on top of inputs, as titles inside components, pages or panels"
+        },
+        "small": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.strong}",
+            "fontSize": "{pillow.core.font.size.scaled.1x}",
+            "lineHeight": "{pillow.core.font.line-height.medium}"
+          },
+          "$description": "singleline text, used for labels on top of inputs, as titles inside components, pages or panels"
+        },
+        "medium": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.strong}",
+            "fontSize": "{pillow.core.font.size.scaled.1_25x}",
+            "lineHeight": "{pillow.core.font.line-height.medium}"
+          },
+          "$description": "singleline text, used for labels on top of inputs, as titles inside components, pages or panels"
+        },
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.strong}",
+            "fontSize": "{pillow.core.font.size.scaled.1_5x}",
+            "lineHeight": "{pillow.core.font.line-height.medium}"
+          },
+          "$description": "singleline text, used for labels on top of inputs, as titles inside components, pages or panels"
+        },
+        "xxl": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.strong}",
+            "fontSize": "{pillow.core.font.size.scaled.2_5x}",
+            "lineHeight": "{pillow.core.font.line-height.medium}"
+          },
+          "$description": "singleline text, used for labels on top of inputs, as titles inside components, pages or panels"
+        },
+        "xxxl": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.strong}",
+            "fontSize": "{pillow.core.font.size.scaled.3x}",
+            "lineHeight": "{pillow.core.font.line-height.medium}"
+          },
+          "$description": "singleline text, used for labels on top of inputs, as titles inside components, pages or panels"
+        }
+      },
+      "body": {
+        "small": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.regular}",
+            "fontSize": "{pillow.core.font.size.scaled.0_75x}",
+            "lineHeight": "{pillow.core.font.line-height.large}"
+          },
+          "$description": "multiline text, used for paragraphes inside components, pages or panels"
+        },
+        "medium": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.regular}",
+            "fontSize": "{pillow.core.font.size.scaled.0_87x}",
+            "lineHeight": "{pillow.core.font.line-height.large}"
+          },
+          "$description": "multiline text, used for paragraphes inside components, pages or panels"
+        },
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.regular}",
+            "fontSize": "{pillow.core.font.size.scaled.1x}",
+            "lineHeight": "{pillow.core.font.line-height.large}"
+          },
+          "$description": "multiline text, used for paragraphes inside components, pages or panels"
+        },
+        "xlarge": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{pillow.core.font.family.manrope}",
+            "fontWeight": "{pillow.core.font.weight.regular}",
+            "fontSize": "{pillow.core.font.size.scaled.1_25x}",
+            "lineHeight": "{pillow.core.font.line-height.large}"
+          },
+          "$description": "multiline text, used for paragraphes inside components, pages or panels"
+        }
+      },
+      "interactive": {
+        "default": {
+          "small": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.regular}",
+              "fontSize": "{pillow.core.font.size.scaled.0_75x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.regular}",
+              "fontSize": "{pillow.core.font.size.scaled.0_87x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "large": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.regular}",
+              "fontSize": "{pillow.core.font.size.scaled.1x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "xl": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.regular}",
+              "fontSize": "{pillow.core.font.size.scaled.1_25x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "xxl": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.regular}",
+              "fontSize": "{pillow.core.font.size.scaled.1_5x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          }
+        },
+        "medium": {
+          "small": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.medium}",
+              "fontSize": "{pillow.core.font.size.scaled.0_75x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.medium}",
+              "fontSize": "{pillow.core.font.size.scaled.0_87x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "large": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.medium}",
+              "fontSize": "{pillow.core.font.size.scaled.1x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "xl": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.medium}",
+              "fontSize": "{pillow.core.font.size.scaled.1_25x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "xxl": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.medium}",
+              "fontSize": "{pillow.core.font.size.scaled.1_5x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          }
+        },
+        "strong": {
+          "small": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.strong}",
+              "fontSize": "{pillow.core.font.size.scaled.0_75x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.strong}",
+              "fontSize": "{pillow.core.font.size.scaled.0_87x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "large": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.strong}",
+              "fontSize": "{pillow.core.font.size.scaled.1x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "xl": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.strong}",
+              "fontSize": "{pillow.core.font.size.scaled.1_25x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          },
+          "xxl": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{pillow.core.font.family.manrope}",
+              "fontWeight": "{pillow.core.font.weight.strong}",
+              "fontSize": "{pillow.core.font.size.scaled.1_5x}",
+              "lineHeight": "{pillow.core.font.line-height.extra-small}"
+            },
+            "$description": "singleline text, used for button labels, breadcrumbs, chips and everything that is clickable."
+          }
+        }
+      }
+    }
+  }
+}

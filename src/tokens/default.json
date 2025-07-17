@@ -1,0 +1,705 @@
+{
+  "pillow": {
+    "color": {
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.25}"
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.50}"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.100}"
+        }
+      },
+      "background": {
+        "page": {
+          "default": {
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.50}"
+          }
+        },
+        "neutral": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.transparent}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.500}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.24",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.500}"
+          }
+        },
+        "neutral-bold": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.150}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.250}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.300}"
+          }
+        },
+        "primary": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.blue.50}",
+            "$description": "Primary color to ber used for main CTAs and promotional content, e.g. badges."
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.08",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.primary.initial}",
+            "$description": "Primary hover color to ber used for main CTAs and promotional content, e.g. badges."
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.primary.initial}",
+            "$description": "Primary color to ber used for main CTAs and promotional content, e.g. badges."
+          }
+        },
+        "primary-bold": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.blue.400}",
+            "$description": "Primary color to ber used for main CTAs and promotional content, e.g. badges."
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.primary-bold.initial}",
+            "$description": "Primary hover color to ber used for main CTAs and promotional content, e.g. badges."
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.36",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.primary-bold.initial}",
+            "$description": "Primary color to ber used for main CTAs and promotional content, e.g. badges."
+          }
+        },
+        "selected": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.blue.25}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.08",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.selected.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.selected.initial}"
+          }
+        },
+        "selected-bold": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.blue.400}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.selected-bold.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.36",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.selected-bold.initial}"
+          }
+        },
+        "danger": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.red.25}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.08",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.danger.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.danger.initial}"
+          }
+        },
+        "danger-bold": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.red.400}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.danger-bold.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.36",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.danger-bold.initial}"
+          }
+        },
+        "warning": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.yellow.25}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.08",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.warning.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.warning.initial}"
+          }
+        },
+        "warning-bold": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.yellow.500}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.warning-bold.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.36",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.warning-bold.initial}"
+          }
+        },
+        "success": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.green.25}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.08",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.success.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.success.initial}"
+          }
+        },
+        "success-bold": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.green.500}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.success-bold.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.36",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.success-bold.initial}"
+          }
+        },
+        "info": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.blue.25}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.08",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.info.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.info.initial}"
+          }
+        },
+        "info-bold": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.blue.300}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.info-bold.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.36",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.info-bold.initial}"
+          }
+        },
+        "brand": {
+          "initial": {
+            "$type": "color",
+            "$value": "{pillow.core.color.blue.300}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.16",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.brand.initial}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.36",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.color.background.brand.initial}"
+          }
+        },
+        "disabled": {
+          "default": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.48",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.150}"
+          }
+        }
+      },
+      "text-and-icon": {
+        "primary": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.400}",
+          "$description": "Primary text and icon color to be used on main CTAs and promotional content, e.g. badges."
+        },
+        "primary-inverted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.25}",
+          "$description": "Primary text and icon color to be used on main CTAs and promotional content, e.g. badges."
+        },
+        "neutral": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.600}"
+        },
+        "neutral-inverted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.50}"
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.300}"
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.400}"
+        },
+        "selected-inverted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.50}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{pillow.core.color.yellow.500}"
+        },
+        "warning-inverted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.yellow.100}"
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{pillow.core.color.red.500}"
+        },
+        "danger-inverted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.red.25}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{pillow.core.color.green.700}"
+        },
+        "success-inverted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.green.25}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.250}"
+        },
+        "brand": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.300}"
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.700}"
+        }
+      },
+      "border": {
+        "primary": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.400}",
+          "$description": "Primary text and icon color to be used on main CTAs and promotional content, e.g. badges."
+        },
+        "primary-bold": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.700}",
+          "$description": "Primary text and icon color to be used on main CTAs and promotional content, e.g. badges."
+        },
+        "neutral": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.500}"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.250}"
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.100}",
+          "$description": "added defualt, subtle muted border colors"
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.25}"
+        },
+        "selected-bold": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.400}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{pillow.core.color.yellow.200}"
+        },
+        "warning-bold": {
+          "$type": "color",
+          "$value": "{pillow.core.color.yellow.500}"
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{pillow.core.color.red.200}"
+        },
+        "danger-bold": {
+          "$type": "color",
+          "$value": "{pillow.core.color.red.600}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{pillow.core.color.green.200}"
+        },
+        "success-bold": {
+          "$type": "color",
+          "$value": "{pillow.core.color.green.600}"
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.200}"
+        },
+        "info-bold": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.600}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.150}"
+        },
+        "transparent": {
+          "$type": "color",
+          "$value": "{pillow.core.color.transparent}"
+        },
+        "input": {
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.200}"
+        },
+        "brand": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.300}"
+        }
+      },
+      "focus": {
+        "outline": {
+          "$type": "color",
+          "$value": "{pillow.core.color.blue.250}",
+          "$description": "Used to be applied to the focus state of elements."
+        }
+      },
+      "blanket": {
+        "default": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.8",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{pillow.core.color.neutral.800}"
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": [
+          {
+            "x": "0",
+            "y": "0",
+            "blur": "1",
+            "spread": "0",
+            "color": "rgba(20,20,20,0.08)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "1",
+            "blur": "8",
+            "spread": "2",
+            "color": "rgba(20,20,20,0.08)",
+            "type": "dropShadow"
+          }
+        ]
+      }
+    }
+  }
+}

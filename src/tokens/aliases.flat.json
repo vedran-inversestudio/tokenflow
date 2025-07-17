@@ -1,0 +1,1435 @@
+{
+  "pillow.core.color.neutral.25": {
+    "$value": "hsl(0, 0%, 100%)"
+  },
+  "pillow.core.color.neutral.50": {
+    "$value": "hsl(0, 0%, 96%)"
+  },
+  "pillow.core.color.neutral.100": {
+    "$value": "hsl(0, 0%, 88.6%)"
+  },
+  "pillow.core.color.neutral.150": {
+    "$value": "hsl(0, 0%, 80.4%)"
+  },
+  "pillow.core.color.neutral.200": {
+    "$value": "hsl(0, 0%, 70.2%)"
+  },
+  "pillow.core.color.neutral.250": {
+    "$value": "hsl(0, 0%, 58.8%)"
+  },
+  "pillow.core.color.neutral.300": {
+    "$value": "hsl(0, 0%, 47.1%)"
+  },
+  "pillow.core.color.neutral.400": {
+    "$value": "hsl(0, 0%, 36.1%)"
+  },
+  "pillow.core.color.neutral.500": {
+    "$value": "hsl(0, 0%, 26.3%)"
+  },
+  "pillow.core.color.neutral.600": {
+    "$value": "hsl(0, 0%, 19.2%)"
+  },
+  "pillow.core.color.neutral.700": {
+    "$value": "hsl(0, 0%, 15.3%)"
+  },
+  "pillow.core.color.neutral.800": {
+    "$value": "hsl(0, 0%, 10.6%)"
+  },
+  "pillow.core.color.blue.25": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.core.color.blue.50": {
+    "$value": "hsl(198, 74.1%, 89.4%)"
+  },
+  "pillow.core.color.blue.100": {
+    "$value": "hsl(200, 79.3%, 82.9%)"
+  },
+  "pillow.core.color.blue.150": {
+    "$value": "hsl(201.3, 89.7%, 77.3%)"
+  },
+  "pillow.core.color.blue.200": {
+    "$value": "hsl(202, 87.7%, 68.2%)"
+  },
+  "pillow.core.color.blue.250": {
+    "$value": "hsl(201.8, 88.3%, 59.6%)"
+  },
+  "pillow.core.color.blue.300": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.core.color.blue.400": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.core.color.blue.500": {
+    "$value": "hsl(201.8, 100%, 32.9%)"
+  },
+  "pillow.core.color.blue.600": {
+    "$value": "hsl(203.8, 100%, 24.7%)"
+  },
+  "pillow.core.color.blue.700": {
+    "$value": "hsl(205.6, 100%, 18.8%)"
+  },
+  "pillow.core.color.blue.800": {
+    "$value": "hsl(213.2, 63.6%, 17.3%)"
+  },
+  "pillow.core.color.red.25": {
+    "$value": "hsl(6, 62.5%, 96.9%)"
+  },
+  "pillow.core.color.red.50": {
+    "$value": "hsl(6.7, 100%, 92.9%)"
+  },
+  "pillow.core.color.red.100": {
+    "$value": "hsl(6.3, 100%, 88.8%)"
+  },
+  "pillow.core.color.red.150": {
+    "$value": "hsl(5.9, 100%, 84.1%)"
+  },
+  "pillow.core.color.red.200": {
+    "$value": "hsl(5.7, 100%, 79.2%)"
+  },
+  "pillow.core.color.red.250": {
+    "$value": "hsl(4.4, 100%, 73.5%)"
+  },
+  "pillow.core.color.red.300": {
+    "$value": "hsl(3.3, 98.6%, 71%)"
+  },
+  "pillow.core.color.red.400": {
+    "$value": "hsl(3.7, 67.1%, 57.1%)"
+  },
+  "pillow.core.color.red.500": {
+    "$value": "hsl(3.6, 56.5%, 46.9%)"
+  },
+  "pillow.core.color.red.600": {
+    "$value": "hsl(3.5, 65.2%, 36.1%)"
+  },
+  "pillow.core.color.red.700": {
+    "$value": "hsl(2.9, 85.1%, 23.7%)"
+  },
+  "pillow.core.color.red.800": {
+    "$value": "hsl(5.3, 100%, 17.6%)"
+  },
+  "pillow.core.color.green.25": {
+    "$value": "hsl(138.6, 82.9%, 93.1%)"
+  },
+  "pillow.core.color.green.50": {
+    "$value": "hsl(139, 100%, 88.2%)"
+  },
+  "pillow.core.color.green.100": {
+    "$value": "hsl(137.6, 93.2%, 82.7%)"
+  },
+  "pillow.core.color.green.150": {
+    "$value": "hsl(136.5, 80.3%, 76.1%)"
+  },
+  "pillow.core.color.green.200": {
+    "$value": "hsl(135.3, 67.1%, 67.8%)"
+  },
+  "pillow.core.color.green.250": {
+    "$value": "hsl(133.8, 56%, 59%)"
+  },
+  "pillow.core.color.green.300": {
+    "$value": "hsl(133.2, 46.5%, 49.8%)"
+  },
+  "pillow.core.color.green.400": {
+    "$value": "hsl(132.7, 58.4%, 39.6%)"
+  },
+  "pillow.core.color.green.500": {
+    "$value": "hsl(133, 76.2%, 29.6%)"
+  },
+  "pillow.core.color.green.600": {
+    "$value": "hsl(131.3, 89.4%, 22.2%)"
+  },
+  "pillow.core.color.green.700": {
+    "$value": "hsl(125.9, 100%, 16.1%)"
+  },
+  "pillow.core.color.green.800": {
+    "$value": "hsl(117.9, 90.6%, 12.5%)"
+  },
+  "pillow.core.color.yellow.25": {
+    "$value": "hsl(31.8, 63%, 94.7%)"
+  },
+  "pillow.core.color.yellow.50": {
+    "$value": "hsl(32, 100%, 88.2%)"
+  },
+  "pillow.core.color.yellow.100": {
+    "$value": "hsl(33, 100%, 82.5%)"
+  },
+  "pillow.core.color.yellow.150": {
+    "$value": "hsl(33.7, 100%, 76.3%)"
+  },
+  "pillow.core.color.yellow.200": {
+    "$value": "hsl(34.6, 100%, 69.4%)"
+  },
+  "pillow.core.color.yellow.250": {
+    "$value": "hsl(35.2, 84.4%, 62.4%)"
+  },
+  "pillow.core.color.yellow.300": {
+    "$value": "hsl(34.1, 71.2%, 57.8%)"
+  },
+  "pillow.core.color.yellow.400": {
+    "$value": "hsl(32.8, 56.3%, 51.6%)"
+  },
+  "pillow.core.color.yellow.500": {
+    "$value": "hsl(32, 54.5%, 43.9%)"
+  },
+  "pillow.core.color.yellow.600": {
+    "$value": "hsl(30.6, 57.1%, 35.7%)"
+  },
+  "pillow.core.color.yellow.700": {
+    "$value": "hsl(28.9, 60%, 26.5%)"
+  },
+  "pillow.core.color.yellow.800": {
+    "$value": "hsl(28.2, 57.6%, 16.7%)"
+  },
+  "pillow.core.color.transparent": {
+    "$value": "hsl(0, 0%, 10.6%)"
+  },
+  "pillow.core.dimension.0": {
+    "$value": "0"
+  },
+  "pillow.core.dimension.6": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.core.dimension.12": {
+    "$value": "{pillow.core.dimension.base} * 12.5"
+  },
+  "pillow.core.dimension.25": {
+    "$value": "{pillow.core.dimension.base} * 25"
+  },
+  "pillow.core.dimension.37": {
+    "$value": "{pillow.core.dimension.base} * 37.5"
+  },
+  "pillow.core.dimension.50": {
+    "$value": "{pillow.core.dimension.base} * 50"
+  },
+  "pillow.core.dimension.57": {
+    "$value": "9px"
+  },
+  "pillow.core.dimension.75": {
+    "$value": "{pillow.core.dimension.base} * 75"
+  },
+  "pillow.core.dimension.100": {
+    "$value": "{pillow.core.dimension.base} * 100"
+  },
+  "pillow.core.dimension.125": {
+    "$value": "{pillow.core.dimension.base} * 125"
+  },
+  "pillow.core.dimension.150": {
+    "$value": "{pillow.core.dimension.base} * 150"
+  },
+  "pillow.core.dimension.175": {
+    "$value": "{pillow.core.dimension.base} * 175"
+  },
+  "pillow.core.dimension.200": {
+    "$value": "{pillow.core.dimension.base} * 200"
+  },
+  "pillow.core.dimension.225": {
+    "$value": "{pillow.core.dimension.base} * 225"
+  },
+  "pillow.core.dimension.250": {
+    "$value": "{pillow.core.dimension.base} * 250"
+  },
+  "pillow.core.dimension.300": {
+    "$value": "{pillow.core.dimension.base} * 300"
+  },
+  "pillow.core.dimension.350": {
+    "$value": "{pillow.core.dimension.base} * 350"
+  },
+  "pillow.core.dimension.400": {
+    "$value": "{pillow.core.dimension.base} * 400"
+  },
+  "pillow.core.dimension.450": {
+    "$value": "{pillow.core.dimension.base} * 450"
+  },
+  "pillow.core.dimension.500": {
+    "$value": "{pillow.core.dimension.base} * 500"
+  },
+  "pillow.core.dimension.600": {
+    "$value": "{pillow.core.dimension.base} * 600"
+  },
+  "pillow.core.dimension.700": {
+    "$value": "{pillow.core.dimension.base} * 700"
+  },
+  "pillow.core.dimension.800": {
+    "$value": "{pillow.core.dimension.base} * 800"
+  },
+  "pillow.core.dimension.900": {
+    "$value": "{pillow.core.dimension.base} * 900"
+  },
+  "pillow.core.dimension.1000": {
+    "$value": "{pillow.core.dimension.base} * 1000"
+  },
+  "pillow.core.dimension.1100": {
+    "$value": "{pillow.core.dimension.base} * 1100"
+  },
+  "pillow.core.dimension.1200": {
+    "$value": "{pillow.core.dimension.base} * 1200"
+  },
+  "pillow.core.dimension.1300": {
+    "$value": "{pillow.core.dimension.base} * 1300"
+  },
+  "pillow.core.dimension.1400": {
+    "$value": "{pillow.core.dimension.base} * 1400"
+  },
+  "pillow.core.dimension.1500": {
+    "$value": "{pillow.core.dimension.base} * 1500"
+  },
+  "pillow.core.dimension.1600": {
+    "$value": "{pillow.core.dimension.base} * 1600"
+  },
+  "pillow.core.dimension.2000": {
+    "$value": "{pillow.core.dimension.base} * 2000"
+  },
+  "pillow.core.dimension.2400": {
+    "$value": "{pillow.core.dimension.base} * 2400"
+  },
+  "pillow.core.dimension.base": {
+    "$value": "{pillow.core.size.SCALE} / 100"
+  },
+  "pillow.core.size.SCALE": {
+    "$value": "16"
+  },
+  "pillow.core.font-size.REM": {
+    "$value": "16"
+  },
+  "pillow.core.font-size.scaled.0_5x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 50"
+  },
+  "pillow.core.font-size.scaled.0_56x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 56.25"
+  },
+  "pillow.core.font-size.scaled.0_62x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 62.5"
+  },
+  "pillow.core.font-size.scaled.0_68x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 68.75"
+  },
+  "pillow.core.font-size.scaled.0_75x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 75"
+  },
+  "pillow.core.font-size.scaled.0_81x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 81.25"
+  },
+  "pillow.core.font-size.scaled.0_87x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 87.5"
+  },
+  "pillow.core.font-size.scaled.1x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 100"
+  },
+  "pillow.core.font-size.scaled.1_25x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 125"
+  },
+  "pillow.core.font-size.scaled.1_5x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 150"
+  },
+  "pillow.core.font-size.scaled.1_75x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 175"
+  },
+  "pillow.core.font-size.scaled.2x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 200"
+  },
+  "pillow.core.font-size.scaled.2_25x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 225"
+  },
+  "pillow.core.font-size.scaled.2_5x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 250"
+  },
+  "pillow.core.font-size.scaled.2_75x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 275"
+  },
+  "pillow.core.font-size.scaled.3x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 300"
+  },
+  "pillow.core.font-size.scaled.3_25x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 325"
+  },
+  "pillow.core.font-size.scaled.3_5x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 350"
+  },
+  "pillow.core.font-size.scaled.3_75x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 375"
+  },
+  "pillow.core.font-size.scaled.4x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 400"
+  },
+  "pillow.core.font-size.scaled.4_5x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 450"
+  },
+  "pillow.core.font-size.scaled.5x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 500"
+  },
+  "pillow.core.font-size.scaled.5_5x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 550"
+  },
+  "pillow.core.font-size.scaled.6x": {
+    "$value": "{pillow.core.font-size.scaled.base} * 600"
+  },
+  "pillow.core.font-size.scaled.base": {
+    "$value": "{pillow.core.font-size.REM} / 100"
+  },
+  "pillow.core.paragraph-spacing.none": {
+    "$value": "0.0"
+  },
+  "pillow.core.paragraph-spacing.small": {
+    "$value": "0.25"
+  },
+  "pillow.core.paragraph-spacing.medium": {
+    "$value": "0.5"
+  },
+  "pillow.core.paragraph-spacing.large": {
+    "$value": "0.75"
+  },
+  "pillow.core.paragraph-spacing.extra-large": {
+    "$value": "1"
+  },
+  "pillow.core.font-family.manrope": {
+    "$value": "Manrope"
+  },
+  "pillow.core.font-weight.regular": {
+    "$value": "400"
+  },
+  "pillow.core.font-weight.medium": {
+    "$value": "500"
+  },
+  "pillow.core.font-weight.strong": {
+    "$value": "700"
+  },
+  "pillow.core.line-height.extra-small": {
+    "$value": "100%"
+  },
+  "pillow.core.line-height.small": {
+    "$value": "110%"
+  },
+  "pillow.core.line-height.medium": {
+    "$value": "130%"
+  },
+  "pillow.core.line-height.large": {
+    "$value": "150%"
+  },
+  "pillow.color.textfield.background.default": {
+    "$value": "hsl(0, 0%, 100%)"
+  },
+  "pillow.color.textfield.background.disabled": {
+    "$value": "hsl(0, 0%, 100%)"
+  },
+  "pillow.color.surface.default": {
+    "$value": "hsl(0, 0%, 100%)"
+  },
+  "pillow.color.surface.muted": {
+    "$value": "hsl(0, 0%, 96%)"
+  },
+  "pillow.color.surface.subtle": {
+    "$value": "hsl(0, 0%, 88.6%)"
+  },
+  "pillow.color.background.page.default": {
+    "$value": "hsl(0, 0%, 96%)"
+  },
+  "pillow.color.background.neutral.initial": {
+    "$value": "hsl(0, 0%, 10.6%)"
+  },
+  "pillow.color.background.neutral.hover": {
+    "$value": "hsl(0, 0%, 26.3%)"
+  },
+  "pillow.color.background.neutral.active": {
+    "$value": "hsl(0, 0%, 26.3%)"
+  },
+  "pillow.color.background.neutral-bold.initial": {
+    "$value": "hsl(0, 0%, 80.4%)"
+  },
+  "pillow.color.background.neutral-bold.hover": {
+    "$value": "hsl(0, 0%, 58.8%)"
+  },
+  "pillow.color.background.neutral-bold.active": {
+    "$value": "hsl(0, 0%, 47.1%)"
+  },
+  "pillow.color.background.primary.initial": {
+    "$value": "hsl(198, 74.1%, 89.4%)"
+  },
+  "pillow.color.background.primary.hover": {
+    "$value": "hsl(198, 74.1%, 89.4%)"
+  },
+  "pillow.color.background.primary.active": {
+    "$value": "hsl(198, 74.1%, 89.4%)"
+  },
+  "pillow.color.background.primary-bold.initial": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.background.primary-bold.hover": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.background.primary-bold.active": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.background.selected.initial": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.color.background.selected.hover": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.color.background.selected.active": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.color.background.selected-bold.initial": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.background.selected-bold.hover": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.background.selected-bold.active": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.background.danger.initial": {
+    "$value": "hsl(6, 62.5%, 96.9%)"
+  },
+  "pillow.color.background.danger.hover": {
+    "$value": "hsl(6, 62.5%, 96.9%)"
+  },
+  "pillow.color.background.danger.active": {
+    "$value": "hsl(6, 62.5%, 96.9%)"
+  },
+  "pillow.color.background.danger-bold.initial": {
+    "$value": "hsl(3.7, 67.1%, 57.1%)"
+  },
+  "pillow.color.background.danger-bold.hover": {
+    "$value": "hsl(3.7, 67.1%, 57.1%)"
+  },
+  "pillow.color.background.danger-bold.active": {
+    "$value": "hsl(3.7, 67.1%, 57.1%)"
+  },
+  "pillow.color.background.warning.initial": {
+    "$value": "hsl(31.8, 63%, 94.7%)"
+  },
+  "pillow.color.background.warning.hover": {
+    "$value": "hsl(31.8, 63%, 94.7%)"
+  },
+  "pillow.color.background.warning.active": {
+    "$value": "hsl(31.8, 63%, 94.7%)"
+  },
+  "pillow.color.background.warning-bold.initial": {
+    "$value": "hsl(32, 54.5%, 43.9%)"
+  },
+  "pillow.color.background.warning-bold.hover": {
+    "$value": "hsl(32, 54.5%, 43.9%)"
+  },
+  "pillow.color.background.warning-bold.active": {
+    "$value": "hsl(32, 54.5%, 43.9%)"
+  },
+  "pillow.color.background.success.initial": {
+    "$value": "hsl(138.6, 82.9%, 93.1%)"
+  },
+  "pillow.color.background.success.hover": {
+    "$value": "hsl(138.6, 82.9%, 93.1%)"
+  },
+  "pillow.color.background.success.active": {
+    "$value": "hsl(138.6, 82.9%, 93.1%)"
+  },
+  "pillow.color.background.success-bold.initial": {
+    "$value": "hsl(133, 76.2%, 29.6%)"
+  },
+  "pillow.color.background.success-bold.hover": {
+    "$value": "hsl(133, 76.2%, 29.6%)"
+  },
+  "pillow.color.background.success-bold.active": {
+    "$value": "hsl(133, 76.2%, 29.6%)"
+  },
+  "pillow.color.background.info.initial": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.color.background.info.hover": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.color.background.info.active": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.color.background.info-bold.initial": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.color.background.info-bold.hover": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.color.background.info-bold.active": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.color.background.brand.initial": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.color.background.brand.hover": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.color.background.brand.active": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.color.background.disabled.default": {
+    "$value": "hsl(0, 0%, 80.4%)"
+  },
+  "pillow.color.text-and-icon.primary": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.text-and-icon.primary-inverted": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.color.text-and-icon.neutral": {
+    "$value": "hsl(0, 0%, 19.2%)"
+  },
+  "pillow.color.text-and-icon.neutral-inverted": {
+    "$value": "hsl(0, 0%, 96%)"
+  },
+  "pillow.color.text-and-icon.muted": {
+    "$value": "hsl(0, 0%, 47.1%)"
+  },
+  "pillow.color.text-and-icon.selected": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.text-and-icon.selected-inverted": {
+    "$value": "hsl(198, 74.1%, 89.4%)"
+  },
+  "pillow.color.text-and-icon.warning": {
+    "$value": "hsl(32, 54.5%, 43.9%)"
+  },
+  "pillow.color.text-and-icon.warning-inverted": {
+    "$value": "hsl(33, 100%, 82.5%)"
+  },
+  "pillow.color.text-and-icon.danger": {
+    "$value": "hsl(3.6, 56.5%, 46.9%)"
+  },
+  "pillow.color.text-and-icon.danger-inverted": {
+    "$value": "hsl(6, 62.5%, 96.9%)"
+  },
+  "pillow.color.text-and-icon.success": {
+    "$value": "hsl(125.9, 100%, 16.1%)"
+  },
+  "pillow.color.text-and-icon.success-inverted": {
+    "$value": "hsl(138.6, 82.9%, 93.1%)"
+  },
+  "pillow.color.text-and-icon.disabled": {
+    "$value": "hsl(0, 0%, 58.8%)"
+  },
+  "pillow.color.text-and-icon.brand": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.color.text-and-icon.info": {
+    "$value": "hsl(205.6, 100%, 18.8%)"
+  },
+  "pillow.color.border.primary": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.border.primary-bold": {
+    "$value": "hsl(205.6, 100%, 18.8%)"
+  },
+  "pillow.color.border.neutral": {
+    "$value": "hsl(0, 0%, 26.3%)"
+  },
+  "pillow.color.border.subtle": {
+    "$value": "hsl(0, 0%, 58.8%)"
+  },
+  "pillow.color.border.muted": {
+    "$value": "hsl(0, 0%, 88.6%)"
+  },
+  "pillow.color.border.selected": {
+    "$value": "hsl(192.6, 76%, 95.1%)"
+  },
+  "pillow.color.border.selected-bold": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.color.border.warning": {
+    "$value": "hsl(34.6, 100%, 69.4%)"
+  },
+  "pillow.color.border.warning-bold": {
+    "$value": "hsl(32, 54.5%, 43.9%)"
+  },
+  "pillow.color.border.danger": {
+    "$value": "hsl(5.7, 100%, 79.2%)"
+  },
+  "pillow.color.border.danger-bold": {
+    "$value": "hsl(3.5, 65.2%, 36.1%)"
+  },
+  "pillow.color.border.success": {
+    "$value": "hsl(135.3, 67.1%, 67.8%)"
+  },
+  "pillow.color.border.success-bold": {
+    "$value": "hsl(131.3, 89.4%, 22.2%)"
+  },
+  "pillow.color.border.info": {
+    "$value": "hsl(202, 87.7%, 68.2%)"
+  },
+  "pillow.color.border.info-bold": {
+    "$value": "hsl(203.8, 100%, 24.7%)"
+  },
+  "pillow.color.border.disabled": {
+    "$value": "hsl(0, 0%, 80.4%)"
+  },
+  "pillow.color.border.transparent": {
+    "$value": "hsl(0, 0%, 10.6%)"
+  },
+  "pillow.color.border.input": {
+    "$value": "hsl(0, 0%, 70.2%)"
+  },
+  "pillow.color.border.brand": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.color.focus.outline": {
+    "$value": "hsl(201.8, 88.3%, 59.6%)"
+  },
+  "pillow.color.blanket.default": {
+    "$value": "hsl(0, 0%, 10.6%)"
+  },
+  "pillow.border-box-shadow.action.textfield.initial.x": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.initial.y": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.initial.blur": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.initial.spread": {
+    "$value": "1"
+  },
+  "pillow.border-box-shadow.action.textfield.initial.color": {
+    "$value": "hsl(0, 0%, 70.2%)"
+  },
+  "pillow.border-box-shadow.action.textfield.initial.type": {
+    "$value": "innerShadow"
+  },
+  "pillow.border-box-shadow.action.textfield.hover.x": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.hover.y": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.hover.blur": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.hover.spread": {
+    "$value": "1.5"
+  },
+  "pillow.border-box-shadow.action.textfield.hover.color": {
+    "$value": "hsl(0, 0%, 58.8%)"
+  },
+  "pillow.border-box-shadow.action.textfield.hover.type": {
+    "$value": "innerShadow"
+  },
+  "pillow.border-box-shadow.action.textfield.selected.x": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.selected.y": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.selected.blur": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.selected.spread": {
+    "$value": "2"
+  },
+  "pillow.border-box-shadow.action.textfield.selected.color": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.border-box-shadow.action.textfield.selected.type": {
+    "$value": "innerShadow"
+  },
+  "pillow.border-box-shadow.action.textfield.error.x": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.error.y": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.error.blur": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.error.spread": {
+    "$value": "2"
+  },
+  "pillow.border-box-shadow.action.textfield.error.color": {
+    "$value": "hsl(3.5, 65.2%, 36.1%)"
+  },
+  "pillow.border-box-shadow.action.textfield.error.type": {
+    "$value": "innerShadow"
+  },
+  "pillow.border-box-shadow.action.textfield.disabled.x": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.disabled.y": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.disabled.blur": {
+    "$value": "0"
+  },
+  "pillow.border-box-shadow.action.textfield.disabled.spread": {
+    "$value": "1"
+  },
+  "pillow.border-box-shadow.action.textfield.disabled.color": {
+    "$value": "hsl(0, 0%, 80.4%)"
+  },
+  "pillow.border-box-shadow.action.textfield.disabled.type": {
+    "$value": "innerShadow"
+  },
+  "pillow.shadow.default.0": {
+    "$value": {
+      "x": "0",
+      "y": "0",
+      "blur": "1",
+      "spread": "0",
+      "color": "rgba(20,20,20,0.08)",
+      "type": "dropShadow"
+    }
+  },
+  "pillow.shadow.default.1": {
+    "$value": {
+      "x": "0",
+      "y": "1",
+      "blur": "8",
+      "spread": "2",
+      "color": "rgba(20,20,20,0.08)",
+      "type": "dropShadow"
+    }
+  },
+  "pillow.border-radius.container.none": {
+    "$value": "0"
+  },
+  "pillow.border-radius.container.0_12x": {
+    "$value": "{pillow.core.dimension.base} * 12.5"
+  },
+  "pillow.border-radius.container.0_25x": {
+    "$value": "{pillow.core.dimension.base} * 25"
+  },
+  "pillow.border-radius.container.0_37x": {
+    "$value": "{pillow.core.dimension.base} * 37.5"
+  },
+  "pillow.border-radius.container.0_50x": {
+    "$value": "{pillow.core.dimension.base} * 50"
+  },
+  "pillow.border-radius.container.0_57x": {
+    "$value": "9px"
+  },
+  "pillow.border-radius.container.1x": {
+    "$value": "{pillow.core.dimension.base} * 100"
+  },
+  "pillow.border-radius.container.pill": {
+    "$value": "1000"
+  },
+  "pillow.border-width.base.none": {
+    "$value": "0"
+  },
+  "pillow.border-width.base.s": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border-width.base.sm": {
+    "$value": "1.5"
+  },
+  "pillow.border-width.base.m": {
+    "$value": "{pillow.core.dimension.base} * 12.5"
+  },
+  "pillow.border-width.icon-stroke.s": {
+    "$value": "1"
+  },
+  "pillow.border-width.icon-stroke.m": {
+    "$value": "1.25"
+  },
+  "pillow.border-width.icon-stroke.l": {
+    "$value": "1.75"
+  },
+  "pillow.border.action.transparent.color": {
+    "$value": "hsl(0, 0%, 10.6%)"
+  },
+  "pillow.border.action.transparent.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.transparent.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.default.color": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.border.action.default.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.default.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.disabled.color": {
+    "$value": "hsl(0, 0%, 80.4%)"
+  },
+  "pillow.border.action.disabled.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.disabled.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.focused.color": {
+    "$value": "hsl(201.8, 88.3%, 59.6%)"
+  },
+  "pillow.border.action.focused.width": {
+    "$value": "{pillow.core.dimension.base} * 12.5"
+  },
+  "pillow.border.action.focused.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.selected.color": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.border.action.selected.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.selected.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.error.color": {
+    "$value": "hsl(3.5, 65.2%, 36.1%)"
+  },
+  "pillow.border.action.error.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.error.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.warning.color": {
+    "$value": "hsl(32, 54.5%, 43.9%)"
+  },
+  "pillow.border.action.warning.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.warning.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.info.color": {
+    "$value": "hsl(203.8, 100%, 24.7%)"
+  },
+  "pillow.border.action.info.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.info.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.success.color": {
+    "$value": "hsl(131.3, 89.4%, 22.2%)"
+  },
+  "pillow.border.action.success.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.success.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.brand.color": {
+    "$value": "hsl(197.9, 99.1%, 43.7%)"
+  },
+  "pillow.border.action.brand.width": {
+    "$value": "2px"
+  },
+  "pillow.border.action.brand.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.primary.color": {
+    "$value": "hsl(205.6, 100%, 18.8%)"
+  },
+  "pillow.border.action.primary.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.action.primary.style": {
+    "$value": "solid"
+  },
+  "pillow.border.action.input.color": {
+    "$value": "hsl(0, 0%, 70.2%)"
+  },
+  "pillow.border.action.input.width": {
+    "$value": "1"
+  },
+  "pillow.border.action.input.style": {
+    "$value": "solid"
+  },
+  "pillow.border.base.default.color": {
+    "$value": "hsl(0, 0%, 26.3%)"
+  },
+  "pillow.border.base.default.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.base.default.style": {
+    "$value": "solid"
+  },
+  "pillow.border.base.subtle.color": {
+    "$value": "hsl(0, 0%, 58.8%)"
+  },
+  "pillow.border.base.subtle.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.base.subtle.style": {
+    "$value": "solid"
+  },
+  "pillow.border.base.muted.color": {
+    "$value": "hsl(0, 0%, 88.6%)"
+  },
+  "pillow.border.base.muted.width": {
+    "$value": "{pillow.core.dimension.base} * 6.25"
+  },
+  "pillow.border.base.muted.style": {
+    "$value": "solid"
+  },
+  "pillow.box-shadow.container.selected.x": {
+    "$value": "0"
+  },
+  "pillow.box-shadow.container.selected.y": {
+    "$value": "0"
+  },
+  "pillow.box-shadow.container.selected.blur": {
+    "$value": "0"
+  },
+  "pillow.box-shadow.container.selected.spread": {
+    "$value": "2"
+  },
+  "pillow.box-shadow.container.selected.color": {
+    "$value": "hsl(200, 98%, 38%)"
+  },
+  "pillow.box-shadow.container.selected.type": {
+    "$value": "innerShadow"
+  },
+  "pillow.sizing.viewport-breakpoints.576": {
+    "$value": "576"
+  },
+  "pillow.sizing.viewport-breakpoints.768": {
+    "$value": "768"
+  },
+  "pillow.sizing.viewport-breakpoints.1024": {
+    "$value": "1024"
+  },
+  "pillow.sizing.viewport-breakpoints.1200": {
+    "$value": "1200"
+  },
+  "pillow.sizing.viewport-breakpoints.1400": {
+    "$value": "1400"
+  },
+  "pillow.sizing.viewport-breakpoints.1728": {
+    "$value": "1728"
+  },
+  "pillow.spacing.container.none": {
+    "$value": "0"
+  },
+  "pillow.spacing.container.0_12x": {
+    "$value": "{pillow.core.dimension.base} * 12.5"
+  },
+  "pillow.spacing.container.0_25x": {
+    "$value": "{pillow.core.dimension.base} * 25"
+  },
+  "pillow.spacing.container.0_37x": {
+    "$value": "{pillow.core.dimension.base} * 37.5"
+  },
+  "pillow.spacing.container.0_5x": {
+    "$value": "{pillow.core.dimension.base} * 50"
+  },
+  "pillow.spacing.container.0_75x": {
+    "$value": "{pillow.core.dimension.base} * 75"
+  },
+  "pillow.spacing.container.1x": {
+    "$value": "{pillow.core.dimension.base} * 100"
+  },
+  "pillow.spacing.container.1_25x": {
+    "$value": "{pillow.core.dimension.base} * 125"
+  },
+  "pillow.spacing.container.1_5x": {
+    "$value": "{pillow.core.dimension.base} * 150"
+  },
+  "pillow.spacing.container.2x": {
+    "$value": "{pillow.core.dimension.base} * 200"
+  },
+  "pillow.spacing.container.2_5x": {
+    "$value": "{pillow.core.dimension.base} * 250"
+  },
+  "pillow.spacing.container.auto": {
+    "$value": "AUTO"
+  },
+  "pillow.spacing.page.margin.none": {
+    "$value": "0"
+  },
+  "pillow.spacing.page.margin.1x": {
+    "$value": "{pillow.core.dimension.base} * 100"
+  },
+  "pillow.spacing.page.margin.1_5x": {
+    "$value": "{pillow.core.dimension.base} * 150"
+  },
+  "pillow.spacing.page.margin.2x": {
+    "$value": "{pillow.core.dimension.base} * 200"
+  },
+  "pillow.spacing.page.margin.3x": {
+    "$value": "{pillow.core.dimension.base} * 300"
+  },
+  "pillow.spacing.page.padding.none": {
+    "$value": "0"
+  },
+  "pillow.spacing.page.padding.0_25x": {
+    "$value": "{pillow.core.dimension.base} * 25"
+  },
+  "pillow.spacing.page.padding.0_5x": {
+    "$value": "{pillow.core.dimension.base} * 50"
+  },
+  "pillow.spacing.page.padding.1x": {
+    "$value": "{pillow.core.dimension.base} * 100"
+  },
+  "pillow.spacing.page.padding.2x": {
+    "$value": "{pillow.core.dimension.base} * 200"
+  },
+  "pillow.spacing.page.padding.4x": {
+    "$value": "{pillow.core.dimension.base} * 400"
+  },
+  "pillow.spacing.page.padding.8x": {
+    "$value": "{pillow.core.dimension.base} * 800"
+  },
+  "pillow.spacing.page.padding.16x": {
+    "$value": "{pillow.core.dimension.base} * 1600"
+  },
+  "pillow.dimension.action.height.1_25x": {
+    "$value": "{pillow.core.dimension.base} * 125"
+  },
+  "pillow.dimension.action.height.1_5x": {
+    "$value": "{pillow.core.dimension.base} * 150"
+  },
+  "pillow.dimension.action.height.1_75x": {
+    "$value": "{pillow.core.dimension.base} * 175"
+  },
+  "pillow.dimension.action.height.2_25x": {
+    "$value": "{pillow.core.dimension.base} * 225"
+  },
+  "pillow.dimension.action.height.3x": {
+    "$value": "{pillow.core.dimension.base} * 300"
+  },
+  "pillow.dimension.action.width.1_5x": {
+    "$value": "{pillow.core.dimension.base} * 150"
+  },
+  "pillow.dimension.action.width.1_75x": {
+    "$value": "{pillow.core.dimension.base} * 175"
+  },
+  "pillow.dimension.action.width.2_25x": {
+    "$value": "{pillow.core.dimension.base} * 225"
+  },
+  "pillow.dimension.input.height.3x": {
+    "$value": "{pillow.core.dimension.base} * 300"
+  },
+  "pillow.dimension.input.height.2_25x": {
+    "$value": "{pillow.core.dimension.base} * 225"
+  },
+  "pillow.dimension.icon.0_5x": {
+    "$value": "{pillow.core.dimension.base} * 75"
+  },
+  "pillow.dimension.icon.0_75x": {
+    "$value": "{pillow.core.dimension.base} * 100"
+  },
+  "pillow.dimension.icon.1x": {
+    "$value": "{pillow.core.dimension.base} * 125"
+  },
+  "pillow.dimension.spinner.0_5x": {
+    "$value": "{pillow.core.dimension.base} * 75"
+  },
+  "pillow.dimension.spinner.0_75x": {
+    "$value": "{pillow.core.dimension.base} * 100"
+  },
+  "pillow.dimension.spinner.1x": {
+    "$value": "{pillow.core.dimension.base} * 125"
+  },
+  "pillow.typography.title.xxs.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.title.xxs.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.title.xxs.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 75"
+  },
+  "pillow.typography.title.xxs.lineHeight": {
+    "$value": "130%"
+  },
+  "pillow.typography.title.xs.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.title.xs.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.title.xs.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 87.5"
+  },
+  "pillow.typography.title.xs.lineHeight": {
+    "$value": "130%"
+  },
+  "pillow.typography.title.small.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.title.small.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.title.small.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 100"
+  },
+  "pillow.typography.title.small.lineHeight": {
+    "$value": "130%"
+  },
+  "pillow.typography.title.medium.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.title.medium.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.title.medium.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 125"
+  },
+  "pillow.typography.title.medium.lineHeight": {
+    "$value": "130%"
+  },
+  "pillow.typography.title.large.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.title.large.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.title.large.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 150"
+  },
+  "pillow.typography.title.large.lineHeight": {
+    "$value": "130%"
+  },
+  "pillow.typography.title.xxl.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.title.xxl.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.title.xxl.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 250"
+  },
+  "pillow.typography.title.xxl.lineHeight": {
+    "$value": "130%"
+  },
+  "pillow.typography.title.xxxl.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.title.xxxl.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.title.xxxl.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 300"
+  },
+  "pillow.typography.title.xxxl.lineHeight": {
+    "$value": "130%"
+  },
+  "pillow.typography.body.small.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.body.small.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.body.small.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 75"
+  },
+  "pillow.typography.body.small.lineHeight": {
+    "$value": "150%"
+  },
+  "pillow.typography.body.medium.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.body.medium.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.body.medium.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 87.5"
+  },
+  "pillow.typography.body.medium.lineHeight": {
+    "$value": "150%"
+  },
+  "pillow.typography.body.large.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.body.large.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.body.large.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 100"
+  },
+  "pillow.typography.body.large.lineHeight": {
+    "$value": "150%"
+  },
+  "pillow.typography.body.xlarge.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.body.xlarge.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.body.xlarge.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 125"
+  },
+  "pillow.typography.body.xlarge.lineHeight": {
+    "$value": "150%"
+  },
+  "pillow.typography.interactive.default.small.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.default.small.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.interactive.default.small.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 75"
+  },
+  "pillow.typography.interactive.default.small.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.default.medium.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.default.medium.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.interactive.default.medium.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 87.5"
+  },
+  "pillow.typography.interactive.default.medium.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.default.large.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.default.large.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.interactive.default.large.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 100"
+  },
+  "pillow.typography.interactive.default.large.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.default.xl.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.default.xl.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.interactive.default.xl.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 125"
+  },
+  "pillow.typography.interactive.default.xl.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.default.xxl.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.default.xxl.fontWeight": {
+    "$value": "400"
+  },
+  "pillow.typography.interactive.default.xxl.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 150"
+  },
+  "pillow.typography.interactive.default.xxl.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.medium.small.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.medium.small.fontWeight": {
+    "$value": "500"
+  },
+  "pillow.typography.interactive.medium.small.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 75"
+  },
+  "pillow.typography.interactive.medium.small.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.medium.medium.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.medium.medium.fontWeight": {
+    "$value": "500"
+  },
+  "pillow.typography.interactive.medium.medium.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 87.5"
+  },
+  "pillow.typography.interactive.medium.medium.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.medium.large.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.medium.large.fontWeight": {
+    "$value": "500"
+  },
+  "pillow.typography.interactive.medium.large.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 100"
+  },
+  "pillow.typography.interactive.medium.large.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.medium.xl.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.medium.xl.fontWeight": {
+    "$value": "500"
+  },
+  "pillow.typography.interactive.medium.xl.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 125"
+  },
+  "pillow.typography.interactive.medium.xl.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.medium.xxl.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.medium.xxl.fontWeight": {
+    "$value": "500"
+  },
+  "pillow.typography.interactive.medium.xxl.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 150"
+  },
+  "pillow.typography.interactive.medium.xxl.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.strong.small.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.strong.small.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.interactive.strong.small.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 75"
+  },
+  "pillow.typography.interactive.strong.small.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.strong.medium.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.strong.medium.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.interactive.strong.medium.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 87.5"
+  },
+  "pillow.typography.interactive.strong.medium.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.strong.large.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.strong.large.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.interactive.strong.large.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 100"
+  },
+  "pillow.typography.interactive.strong.large.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.strong.xl.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.strong.xl.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.interactive.strong.xl.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 125"
+  },
+  "pillow.typography.interactive.strong.xl.lineHeight": {
+    "$value": "100%"
+  },
+  "pillow.typography.interactive.strong.xxl.fontFamily": {
+    "$value": "Manrope"
+  },
+  "pillow.typography.interactive.strong.xxl.fontWeight": {
+    "$value": "700"
+  },
+  "pillow.typography.interactive.strong.xxl.fontSize": {
+    "$value": "{pillow.core.font-size.scaled.base} * 150"
+  },
+  "pillow.typography.interactive.strong.xxl.lineHeight": {
+    "$value": "100%"
+  }
+}

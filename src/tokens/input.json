@@ -1,0 +1,88 @@
+{
+  "pillow": {
+    "color": {
+      "textfield": {
+        "background": {
+          "default": {
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.25}"
+          },
+          "disabled": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.016",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.25}"
+          }
+        }
+      }
+    },
+    "border-box-shadow": {
+      "action": {
+        "textfield": {
+          "initial": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "1",
+              "color": "{pillow.color.border.input}",
+              "type": "innerShadow"
+            }
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "1.5",
+              "color": "{pillow.color.border.subtle}",
+              "type": "innerShadow"
+            }
+          },
+          "selected": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{pillow.color.border.selected-bold}",
+              "type": "innerShadow"
+            }
+          },
+          "error": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{pillow.color.border.danger-bold}",
+              "type": "innerShadow"
+            }
+          },
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "1",
+              "color": "{pillow.color.border.disabled}",
+              "type": "innerShadow"
+            }
+          }
+        }
+      }
+    }
+  }
+}

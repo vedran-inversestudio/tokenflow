@@ -1,0 +1,224 @@
+{
+  "pillow": {
+    "sizing": {
+      "viewport-breakpoints": {
+        "576": {
+          "$type": "sizing",
+          "$value": "576"
+        },
+        "768": {
+          "$type": "sizing",
+          "$value": "768"
+        },
+        "1024": {
+          "$type": "sizing",
+          "$value": "1024"
+        },
+        "1200": {
+          "$type": "sizing",
+          "$value": "1200"
+        },
+        "1400": {
+          "$type": "sizing",
+          "$value": "1400"
+        },
+        "1728": {
+          "$type": "sizing",
+          "$value": "1728"
+        }
+      }
+    },
+    "spacing": {
+      "container": {
+        "none": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.0}"
+        },
+        "0_12x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.12}"
+        },
+        "0_25x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.25}"
+        },
+        "0_37x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.37}"
+        },
+        "0_5x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.50}"
+        },
+        "0_75x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.75}"
+        },
+        "1x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.100}"
+        },
+        "1_25x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.125}"
+        },
+        "1_5x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.150}"
+        },
+        "2x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.200}"
+        },
+        "2_5x": {
+          "$type": "spacing",
+          "$value": "{pillow.core.dimension.250}"
+        },
+        "auto": {
+          "$type": "spacing",
+          "$value": "AUTO"
+        }
+      },
+      "page": {
+        "margin": {
+          "none": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.0}",
+            "$description": "This is basically your page margin (in breakpoints-speak)."
+          },
+          "1x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.100}"
+          },
+          "1_5x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.150}"
+          },
+          "2x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.200}"
+          },
+          "3x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.300}"
+          }
+        },
+        "padding": {
+          "none": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.0}",
+            "$description": "This is basically your page gutter (in breakpoints-speak)."
+          },
+          "0_25x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.25}"
+          },
+          "0_5x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.50}"
+          },
+          "1x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.100}"
+          },
+          "2x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.200}"
+          },
+          "4x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.400}"
+          },
+          "8x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.800}"
+          },
+          "16x": {
+            "$type": "spacing",
+            "$value": "{pillow.core.dimension.1600}"
+          }
+        }
+      }
+    },
+    "dimension": {
+      "action": {
+        "height": {
+          "1_25x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.125}"
+          },
+          "1_5x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.150}"
+          },
+          "1_75x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.175}"
+          },
+          "2_25x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.225}"
+          },
+          "3x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.300}"
+          }
+        },
+        "width": {
+          "1_5x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.150}"
+          },
+          "1_75x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.175}"
+          },
+          "2_25x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.225}"
+          }
+        }
+      },
+      "input": {
+        "height": {
+          "3x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.300}"
+          },
+          "2_25x": {
+            "$type": "dimension",
+            "$value": "{pillow.core.dimension.225}"
+          }
+        }
+      },
+      "icon": {
+        "0_5x": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.75}"
+        },
+        "0_75x": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.100}"
+        },
+        "1x": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.125}"
+        }
+      },
+      "spinner": {
+        "0_5x": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.75}"
+        },
+        "0_75x": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.100}"
+        },
+        "1x": {
+          "$type": "dimension",
+          "$value": "{pillow.core.dimension.125}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "tokenflow",
+  "version": "1.0.0",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "figma-api": "^2.0.2-beta",
+    "mathjs": "^14.5.3",
+    "node-fetch": "^3.3.2",
+    "style-dictionary": "^5.0.1"
+  },
+  "devDependencies": {
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@storybook/addon-docs": "^8.6.14",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
+    "@storybook/blocks": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "@storybook/web-components": "^8.6.14",
+    "@storybook/web-components-webpack5": "^8.6.14",
+    "lit": "^3.3.1",
+    "storybook": "^8.6.14"
+  },
+  "scripts": {
+    "start": "your-start-script",
+    "tokens:build": "style-dictionary build --config ./style-dictionary.config.mjs",
+    "tokens:postprocess": "node postprocess-tokens-css.js",
+    "storybook": "storybook dev -p 6006",
+    "tokens:all": "npm run tokens:build && npm run tokens:postprocess"
+  }
+}
