@@ -180,7 +180,7 @@
     "$value": "hsl(28.2, 57.6%, 16.7%)"
   },
   "pillow.core.color.transparent": {
-    "$value": "hsl(0, 0%, 10.6%)"
+    "$value": "rgba(27, 27, 27, 0)"
   },
   "pillow.core.dimension.0": {
     "$value": "0"
@@ -423,7 +423,7 @@
     "$value": "hsl(0, 0%, 96%)"
   },
   "pillow.color.background.neutral.initial": {
-    "$value": "hsl(0, 0%, 10.6%)"
+    "$value": "rgba(27, 27, 27, 0)"
   },
   "pillow.color.background.neutral.hover": {
     "$value": "hsl(0, 0%, 26.3%)"
@@ -657,7 +657,7 @@
     "$value": "hsl(0, 0%, 80.4%)"
   },
   "pillow.color.border.transparent": {
-    "$value": "hsl(0, 0%, 10.6%)"
+    "$value": "rgba(27, 27, 27, 0)"
   },
   "pillow.color.border.input": {
     "$value": "hsl(0, 0%, 70.2%)"
@@ -827,7 +827,7 @@
     "$value": "1.75"
   },
   "pillow.border.action.transparent.color": {
-    "$value": "hsl(0, 0%, 10.6%)"
+    "$value": "#1b1b1b00"
   },
   "pillow.border.action.transparent.width": {
     "$value": "{pillow.core.dimension.base} * 6.25"

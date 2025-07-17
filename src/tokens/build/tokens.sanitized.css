@@ -63,7 +63,7 @@
 --pillow-core-color-yellow-600: hsl(30.6, 57.1%, 35.7%);
 --pillow-core-color-yellow-700: hsl(28.9, 60%, 26.5%);
 --pillow-core-color-yellow-800: hsl(28.2, 57.6%, 16.7%);
---pillow-core-color-transparent: hsl(0, 0%, 10.6%);
+--pillow-core-color-transparent: rgba(27, 27, 27, 0);
 --pillow-core-dimension-0: 0px;
 --pillow-core-dimension-6: 1px;
 --pillow-core-dimension-12: 2px;
@@ -144,7 +144,7 @@
 --pillow-color-surface-muted: hsl(0, 0%, 96%);
 --pillow-color-surface-subtle: hsl(0, 0%, 88.6%);
 --pillow-color-background-page-default: hsl(0, 0%, 96%);
---pillow-color-background-neutral-initial: hsl(0, 0%, 10.6%);
+--pillow-color-background-neutral-initial: rgba(27, 27, 27, 0);
 --pillow-color-background-neutral-hover: hsl(0, 0%, 26.3%);
 --pillow-color-background-neutral-active: hsl(0, 0%, 26.3%);
 --pillow-color-background-neutral-bold-initial: hsl(0, 0%, 80.4%);
@@ -222,7 +222,7 @@
 --pillow-color-border-info: hsl(202, 87.7%, 68.2%);
 --pillow-color-border-info-bold: hsl(203.8, 100%, 24.7%);
 --pillow-color-border-disabled: hsl(0, 0%, 80.4%);
---pillow-color-border-transparent: hsl(0, 0%, 10.6%);
+--pillow-color-border-transparent: rgba(27, 27, 27, 0);
 --pillow-color-border-input: hsl(0, 0%, 70.2%);
 --pillow-color-border-brand: hsl(197.9, 99.1%, 43.7%);
 --pillow-color-focus-outline: hsl(201.8, 88.3%, 59.6%);
@@ -274,7 +274,7 @@
 --pillow-border-width-icon-stroke-s: 1px;
 --pillow-border-width-icon-stroke-m: 1.25px;
 --pillow-border-width-icon-stroke-l: 1.75px;
---pillow-border-action-transparent-color: hsl(0, 0%, 10.6%);
+--pillow-border-action-transparent-color: rgba(27, 27, 27, 0);
 --pillow-border-action-transparent-width: 1px;
 --pillow-border-action-transparent-style: solid;
 --pillow-border-action-default-color: hsl(200, 98%, 38%);

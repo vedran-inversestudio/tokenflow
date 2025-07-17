@@ -12,6 +12,8 @@ A modern design system pipeline that syncs Figma/Token Studio design tokens with
   Flattens, resolves, and sanitizes all tokens (core + aliases), including math expressions, to generate clean CSS variables.
 - **Exact Naming:**  
   CSS variable names and values match Figma/Token Studio exactly (including `pillow.` prefix and underscores).
+- **Transparency Handling:**  
+  Transparent color tokens from Figma/Token Studio are automatically patched and preserved as `rgba(...)` in the final CSS, ensuring true transparency in all components.
 - **Storybook Integration:**  
   All components previewed in Storybook use the generated design tokens for accurate, real-time theming.
 - **Extensible & Documented:**  
@@ -90,12 +92,14 @@ fetch-figma-data.mjs              # Figma API fetch script
 2. **Flatten and resolve tokens** using `generate-flat-aliases.js`:
    - Merges core and alias tokens.
    - Recursively resolves references and math expressions.
+   - **Patches all transparent color tokens** (named `transparent`) to ensure they have a value of `#1b1b1b00` (fully transparent dark gray), even if missing or set incorrectly in the Figma export.
    - Outputs to `src/tokens/aliases.flat.json`.
 3. **Build CSS variables** with Style Dictionary:
    - Uses only the flat alias file as input.
    - Outputs to `src/tokens/build/tokens.processed.css`.
-4. **Sanitize CSS** (optional but recommended):
+4. **Sanitize CSS**:
    - Run `postprocess-sanitize-tokens-css.js` to evaluate any remaining math and clean up the CSS.
+   - **Converts all 8-digit hex colors to `rgba(...)`**, preserving alpha transparency in the final CSS.
    - Output: `src/tokens/build/tokens.sanitized.css`.
 5. **Storybook loads the sanitized CSS** via `.storybook/preview.js`.
 
@@ -111,6 +115,10 @@ fetch-figma-data.mjs              # Figma API fetch script
       "color": {
         "neutral": {
           "25": { "$type": "color", "$value": "hsl(0, 0%, 100%)" }
+        },
+        "transparent": {
+          "$type": "color",
+          "$value": "#1b1b1b00"
         }
       }
     }
@@ -140,6 +148,7 @@ fetch-figma-data.mjs              # Figma API fetch script
 ```json
 {
   "pillow.core.color.neutral.25": { "$value": "hsl(0, 0%, 100%)" },
+  "pillow.core.color.transparent": { "$value": "#1b1b1b00" },
   "pillow.color.textfield.background.default": { "$value": "hsl(0, 0%, 100%)" }
 }
 ```
@@ -148,6 +157,7 @@ fetch-figma-data.mjs              # Figma API fetch script
 ```css
 :root {
   --pillow-core-color-neutral-25: hsl(0, 0%, 100%);
+  --pillow-core-color-transparent: rgba(27, 27, 27, 0);
   --pillow-color-textfield-background-default: hsl(0, 0%, 100%);
 }
 ```
@@ -160,6 +170,7 @@ fetch-figma-data.mjs              # Figma API fetch script
 - Use CSS variables in your components:
   ```css
   color: var(--pillow-color-textfield-background-default);
+  border-color: var(--pillow-border-action-transparent-color);
   ```
 
 ---
@@ -185,6 +196,9 @@ fetch-figma-data.mjs              # Figma API fetch script
 - **Component Styling Not Updating:**  
   - Ensure Storybook is using the latest CSS build.
   - Restart Storybook and clear browser cache if needed.
+- **Transparent Colors Not Working:**  
+  - The pipeline now automatically patches and preserves transparency for all tokens named `transparent`.
+  - If you see an opaque color, re-run the pipeline and check the source tokens for naming consistency.
 - **Multiple Storybook Instances:**  
   Use `pkill -f storybook` to kill all running Storybook processes before starting a new one.
 

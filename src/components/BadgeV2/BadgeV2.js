@@ -33,15 +33,17 @@ class PDSBadgeV2 extends HTMLElement {
           --badge-padding-y: 0px;
           --badge-gap: var(--pillow-spacing-container-0_25x);
           --badge-radius: var(--pillow-border-radius-container-pill);
-          --badge-font-family: var(--pillow-typography-interactive-strong-small-font-family);
-          --badge-font-weight: var(--pillow-typography-interactive-strong-small-font-weight);
-          --badge-font-size: var(--pillow-typography-interactive-strong-small-font-size);
-          --badge-line-height: var(--pillow-typography-interactive-strong-small-line-height);
-          --badge-border-width: var(--pillow-border-width-icon-stroke-s);
-          --badge-bg: ${tokens.bg};
-          --badge-color: ${tokens.color};
-          --badge-border: ${tokens.border};
-          --badge-border-color: ${tokens.borderColor};
+          --badge-bg: var(--pillow-color-background-neutral-bold-initial);
+          --badge-border-width: var(--pillow-border-action-transparent-width);
+          --badge-border-style: var(--pillow-border-action-transparent-style);
+          --badge-border-color: var(--pillow-border-action-transparent-color);
+          --badge-height: var(--pillow-dimension-action-height-1_5x);
+          --icon-size: var(--pillow-dimension-icon-0_5x);
+          --text-color: var(--pillow-color-text-and-icon-neutral);
+          --text-font-family: var(--pillow-typography-interactive-strong-small-font-family);
+          --text-font-weight: var(--pillow-typography-interactive-strong-small-font-weight);
+          --text-font-size: var(--pillow-typography-interactive-strong-small-font-size);
+          --text-line-height: var(--pillow-typography-interactive-strong-small-line-height);
         }
         .badge {
           display: inline-flex;
@@ -49,28 +51,29 @@ class PDSBadgeV2 extends HTMLElement {
           gap: var(--badge-gap);
           padding: var(--badge-padding-y) var(--badge-padding-x);
           border-radius: var(--badge-radius);
-          font-family: var(--badge-font-family);
-          font-weight: var(--badge-font-weight);
-          font-size: var(--badge-font-size);
-          line-height: var(--badge-line-height);
           background: var(--badge-bg);
-          color: var(--badge-color);
-          border: var(--badge-border-width) solid var(--badge-border-color);
+          border: var(--pillow-border-action-transparent-width) var(--pillow-border-action-transparent-style) var(--pillow-border-action-transparent-color);
           box-sizing: border-box;
-          height: var(--pillow-dimension-action-height-1_5x);
+          height: var(--badge-height);
         }
         .Icon {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          margin-right: var(--badge-gap);
-          width: var(--pillow-dimension-icon-0_5x);
-          height: var(--pillow-dimension-icon-0_5x);
+          width: var(--icon-size);
+          height: var(--icon-size);
+        }
+        .label {
+          color: var(--text-color);
+          font-family: var(--text-font-family);
+          font-weight: var(--text-font-weight);
+          font-size: var(--text-font-size);
+          line-height: var(--text-line-height);
         }
       </style>
       <span class="badge">
         ${icon ? `<span class="Icon"><pds-icon name="${iconName}" variant="small"></pds-icon></span>` : ''}
-        <slot>${label}</slot>
+        <span class="label"><slot>${label}</slot></span>
       </span>
     `;
   }

@@ -27,6 +27,21 @@ async function readJson(filePath) {
   return JSON.parse(content);
 }
 
+// Patch missing $value for transparent color tokens
+function patchMissingTransparentValue(obj, pathArr = []) {
+  for (const key in obj) {
+    if (typeof obj[key] === 'object' && obj[key] !== null) {
+      if (
+        key.toLowerCase().includes('transparent') &&
+        obj[key]['$type'] === 'color'
+      ) {
+        obj[key]['$value'] = '#1b1b1b00'; // Always set to fully transparent dark gray
+      }
+      patchMissingTransparentValue(obj[key], [...pathArr, key]);
+    }
+  }
+}
+
 async function loadCoreTokens() {
   let merged = {};
   async function processDir(dir) {
@@ -38,6 +53,7 @@ async function loadCoreTokens() {
       } else if (entry.isFile() && entry.name.endsWith('.json')) {
         const json = await readJson(fullPath);
         if (json.pillow) {
+          patchMissingTransparentValue(json.pillow); // Patch before merging
           merged = deepMerge(merged, json.pillow);
         }
       }
@@ -182,6 +198,18 @@ function findAliases(obj, pathArr = [], aliases = {}, coreTokens = {}) {
       if (
         '$value' in obj[key] &&
         typeof obj[key]['$value'] === 'string' &&
+        obj[key]['$type'] === 'color'
+      ) {
+        // Handle color tokens: convert 8-digit hex to rgba
+        let value = obj[key]['$value'];
+        value = hexToRgba(value);
+        aliases[kebabCasePath([...pathArr, key])] = {
+          ...(obj[key]['$type'] ? { $type: obj[key]['$type'] } : {}),
+          $value: value
+        };
+      } else if (
+        '$value' in obj[key] &&
+        typeof obj[key]['$value'] === 'string' &&
         obj[key]['$value'].startsWith('{pillow.core.')
       ) {
         const flatKey = kebabCasePath([...pathArr, key]);
@@ -302,19 +330,34 @@ function flattenTokens(obj, prefix = '', result = {}, allTokens = null) {
       for (const subKey in obj[key].$value) {
         let value = obj[key].$value[subKey];
         value = resolveReference(value, allTokens);
-        // Do NOT evaluate math or append px; just output the string as-is
+        // Handle color tokens: convert 8-digit hex to rgba
+        if (obj[key]['$type'] === 'color') value = hexToRgba(value);
         result[`${prefix}.${key}.${subKey}`] = { $value: value };
       }
     } else if (obj[key] && '$value' in obj[key]) {
       let value = obj[key].$value;
       value = resolveReference(value, allTokens);
-      // Do NOT evaluate math or append px; just output the string as-is
+      // Handle color tokens: convert 8-digit hex to rgba
+      if (obj[key]['$type'] === 'color') value = hexToRgba(value);
       result[prefix ? `${prefix}.${key}` : key] = { $value: value };
     }
   }
   return result;
 }
 // --- END NESTED OUTPUT ---
+
+// Utility: Convert 8-digit hex to rgba()
+function hexToRgba(hex) {
+  if (typeof hex !== 'string') return hex;
+  const match = hex.match(/^#([0-9a-fA-F]{8})$/);
+  if (!match) return hex;
+  const h = match[1];
+  const r = parseInt(h.slice(0, 2), 16);
+  const g = parseInt(h.slice(2, 4), 16);
+  const b = parseInt(h.slice(4, 6), 16);
+  const a = parseInt(h.slice(6, 8), 16) / 255;
+  return `rgba(${r}, ${g}, ${b}, ${a})`;
+}
 
 async function processDir(dir, aliases = {}, coreTokens = {}) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
@@ -344,6 +387,7 @@ async function main() {
       } else if (entry.isFile() && entry.name.endsWith('.json')) {
         const json = await readJson(fullPath);
         if (json.pillow) {
+          patchMissingTransparentValue(json.pillow); // Patch before merging
           merged = deepMerge(merged, json.pillow);
         }
       }
