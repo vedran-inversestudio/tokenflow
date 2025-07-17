@@ -1,96 +1,205 @@
 # Tokenflow Design System
 
+A modern design system pipeline that syncs Figma/Token Studio design tokens with your codebase, ensuring pixel-perfect, up-to-date UI components and documentation via Storybook.
+
+---
+
+## Features
+
+- **Figma/Token Studio Integration:**  
+  Syncs design tokens (color, spacing, typography, etc.) directly from Figma/Token Studio exports.
+- **Automated Token Pipeline:**  
+  Flattens, resolves, and sanitizes all tokens (core + aliases), including math expressions, to generate clean CSS variables.
+- **Exact Naming:**  
+  CSS variable names and values match Figma/Token Studio exactly (including `pillow.` prefix and underscores).
+- **Storybook Integration:**  
+  All components previewed in Storybook use the generated design tokens for accurate, real-time theming.
+- **Extensible & Documented:**  
+  Easy to add new tokens, update from Figma, and extend the system.
+
+---
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```sh
+git clone https://github.com/your-org/tokenflow.git
+cd tokenflow
+```
+
+### 2. Install Dependencies
+
+```sh
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the project root with your Figma API credentials:
+
+```env
+FIGMA_FILE_KEY=your-figma-file-key
+FIGMA_TOKEN=your-figma-personal-access-token
+```
+
+> **Note:**  
+> `.env` is in `.gitignore` and should not be committed.  
+> You may provide a `.env.example` for collaborators.
+
+### 4. Generate and Build Tokens
+
+```sh
+node generate-flat-aliases.js
+npm run tokens:all
+```
+- This will flatten and resolve all tokens, then build and sanitize the CSS output.
+
+### 5. Start Storybook
+
+```sh
+npm run storybook
+```
+- Storybook will use the generated CSS variables for all components.
+
+---
+
 ## Project Structure
 
 ```
 /src
-  /components
-    /Button
-      Button.js
-      Button.stories.js
-      Button.test.js
-      Button.css
-    ... (other components)
-  /icons
-    ... (SVG icon files)
+  /components        # UI components (Button, Badge, etc.)
   /tokens
-    ... (design token JSON files)
-  /utils
-    ... (helper JS/TS files if needed)
-.storybook
-  main.js
-  preview.js
-  ... (other Storybook config)
-public/
-  ... (static assets, if needed)
-test.html
-package.json
-README.md
+    /original        # Raw Figma/Token Studio exports (core, components, etc.)
+    /build           # Generated CSS files (tokens.sanitized.css, etc.)
+    aliases.flat.json# Flattened, resolved tokens (input for Style Dictionary)
+  /stories           # Storybook stories and assets
+  /utils             # Helper scripts
+/.storybook          # Storybook config (loads tokens.sanitized.css)
+generate-flat-aliases.js   # Token flattening script
+postprocess-sanitize-tokens-css.js # CSS sanitizer
+style-dictionary.config.mjs        # Style Dictionary config
+fetch-figma-data.mjs              # Figma API fetch script
 ```
 
-- All components are in `/src/components/ComponentName/`.
-- All SVG icons are in `/src/icons/`.
-- All design tokens are in `/src/tokens/`.
-- Storybook config is in `/.storybook/`.
+---
 
-## Design Token Pipeline & Workflow
+## Design Token Pipeline
 
-### Overview
-This project manages design tokens exported from Figma/Token Studio and uses Style Dictionary to generate CSS variables for use in your component library (e.g., Storybook). The goal is to ensure that all design tokens (colors, spacing, typography, etc.) are accurately reflected in your codebase, with variable names and values matching Figma/Token Studio exactly.
+1. **Export tokens from Figma/Token Studio** to `src/tokens/original/`.
+2. **Flatten and resolve tokens** using `generate-flat-aliases.js`:
+   - Merges core and alias tokens.
+   - Recursively resolves references and math expressions.
+   - Outputs to `src/tokens/aliases.flat.json`.
+3. **Build CSS variables** with Style Dictionary:
+   - Uses only the flat alias file as input.
+   - Outputs to `src/tokens/build/tokens.processed.css`.
+4. **Sanitize CSS** (optional but recommended):
+   - Run `postprocess-sanitize-tokens-css.js` to evaluate any remaining math and clean up the CSS.
+   - Output: `src/tokens/build/tokens.sanitized.css`.
+5. **Storybook loads the sanitized CSS** via `.storybook/preview.js`.
 
-### Token Pipeline Workflow
+---
 
-#### 1. Token Source Structure
-- **Design tokens** are exported from Figma/Token Studio and stored in `src/tokens/original/`.
-- **Core tokens** (the atomic values) are in `src/tokens/original/core/`.
-- **Alias tokens** (which reference core tokens) and component-level tokens are in other files in `src/tokens/original/`.
+## Example Token Files
 
-#### 2. Flattening Script
-- The script `generate-flat-aliases.js` is used to:
-  - Flatten both core and alias tokens into a single flat object.
-  - Ensure all keys are prefixed with `pillow.` to match Figma/Token Studio naming.
-  - Output the result to `src/tokens/aliases.flat.json`.
-- The script now merges both core and alias tokens, so all references can be resolved.
+**Core Token (color):**
+```json
+{
+  "pillow": {
+    "core": {
+      "color": {
+        "neutral": {
+          "25": { "$type": "color", "$value": "hsl(0, 0%, 100%)" }
+        }
+      }
+    }
+  }
+}
+```
 
-#### 3. Style Dictionary Configuration
-- The Style Dictionary config (`style-dictionary.config.mjs`) is set to use only `aliases.flat.json` as the source.
-- This avoids issues with deeply nested or empty files and ensures a flat, reference-free token set for CSS output.
+**Component Alias Token:**
+```json
+{
+  "pillow": {
+    "color": {
+      "textfield": {
+        "background": {
+          "default": {
+            "$type": "color",
+            "$value": "{pillow.core.color.neutral.25}"
+          }
+        }
+      }
+    }
+  }
+}
+```
 
-#### 4. CSS Generation
-- Run the following commands to generate and post-process tokens:
-  ```sh
-  node generate-flat-aliases.js
-  npm run tokens:all
+**Flattened Output (aliases.flat.json):**
+```json
+{
+  "pillow.core.color.neutral.25": { "$value": "hsl(0, 0%, 100%)" },
+  "pillow.color.textfield.background.default": { "$value": "hsl(0, 0%, 100%)" }
+}
+```
+
+**Sanitized CSS Output:**
+```css
+:root {
+  --pillow-core-color-neutral-25: hsl(0, 0%, 100%);
+  --pillow-color-textfield-background-default: hsl(0, 0%, 100%);
+}
+```
+
+---
+
+## Usage in Components
+
+- Import the generated CSS in your app or Storybook (already set up in `.storybook/preview.js`).
+- Use CSS variables in your components:
+  ```css
+  color: var(--pillow-color-textfield-background-default);
   ```
-  - `npm run tokens:all` runs both the Style Dictionary build and a post-processing script (if needed).
-- The output CSS variables are written to `src/tokens/build/tokens.processed.css`.
 
-### Naming and Value Conventions
-- **Variable names** in the CSS output must match Figma/Token Studio exactly (e.g., `--pillow-typography-interactive-strong-small-font-family`).
-- **Values** should be primitives (e.g., `#fff`, `12px`, `Manrope`), not unresolved references.
+---
 
-### Common Issues & Troubleshooting
+## Updating Tokens from Figma
+
+1. Export new tokens from Figma/Token Studio to `src/tokens/original/`.
+2. Run the flattening and build scripts:
+   ```sh
+   node generate-flat-aliases.js
+   npm run tokens:all
+   ```
+3. Restart Storybook if running.
+
+---
+
+## Troubleshooting
 
 - **Unresolved References:**  
-  If Style Dictionary reports unresolved references, check that all referenced tokens exist in `aliases.flat.json` and that all keys have the correct `pillow.` prefix.
-
+  Ensure all referenced tokens exist in `aliases.flat.json` and have the correct prefix.
 - **[object Object] in CSS:**  
-  This means a complex object (like typography) was not flattened into sub-properties. The flattening script must output each sub-property as a separate variable.
-
-- **Badge/Component Styling Not Updating:**  
-  - Ensure the required tokens are present in the CSS output.
-  - Check that Storybook is using the latest CSS build.
+  The flattening script must output each sub-property as a separate variable.
+- **Component Styling Not Updating:**  
+  - Ensure Storybook is using the latest CSS build.
   - Restart Storybook and clear browser cache if needed.
-
 - **Multiple Storybook Instances:**  
   Use `pkill -f storybook` to kill all running Storybook processes before starting a new one.
 
-### Current Status
-- The flattening script and Style Dictionary config are set up to output all tokens (core + aliases) in a flat structure with correct naming.
-- The CSS output now contains the expected variables and values.
-- Some component styling (e.g., Badge) may still not reflect changes—this may require further investigation into CSS loading, caching, or component implementation.
+---
 
-### Next Steps
-1. Double-check that the generated CSS is being loaded by Storybook.
-2. Inspect the Badge component’s rendered HTML/CSS to see which variables are missing or not applied.
-3. Continue refining the pipeline or component code as needed.
+## Contributing
+
+- Fork the repo and create a feature branch.
+- Follow the established token and component structure.
+- Run all token and build scripts before submitting a PR.
+
+---
+
+## License
+
+[MIT] or your license here.
+
+---
