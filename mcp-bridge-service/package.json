@@ -1,0 +1,38 @@
+{
+  "name": "mcp-bridge-service",
+  "version": "1.0.0",
+  "description": "Portable MCP-Bridge service for connecting Cursor to Figma design tokens",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node simple-index.js",
+    "dev": "nodemon simple-index.js",
+    "install-global": "npm install -g .",
+    "configure": "node configure.js"
+  },
+  "keywords": [
+    "mcp",
+    "figma",
+    "design-tokens",
+    "cursor",
+    "bridge",
+    "portable"
+  ],
+  "author": "Tokenflow Bridge",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "dotenv": "^17.2.0",
+    "node-fetch": "^3.3.2",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "mcp-bridge": "./cli.js"
+  }
+}
