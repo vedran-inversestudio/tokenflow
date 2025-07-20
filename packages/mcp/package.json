@@ -2,6 +2,7 @@
   "name": "@tokenflow/mcp",
   "version": "1.0.0",
   "description": "MCP server for Tokenflow development tool integration",
+  "type": "module",
   "main": "simple-server.js",
   "scripts": {
     "start": "node simple-server.js",
