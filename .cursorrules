@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "tokenflow": {
+      "command": "node",
+      "args": ["./packages/mcp/simple-server.js"],
+      "env": {
+        "BRIDGE_URL": "http://localhost:4000",
+        "PROJECT_ID": "default"
+      }
+    }
+  }
+} 

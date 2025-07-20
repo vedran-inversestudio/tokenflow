@@ -214,21 +214,36 @@ PROJECT_ID=default
 
 ### Cursor Integration
 
-Configure Cursor to use the MCP server:
+The project includes a `.cursorrules` file that automatically configures the MCP server when you open this project in Cursor.
 
-```json
-{
-  "mcpServers": {
-    "tokenflow": {
-      "command": "node",
-      "args": ["/path/to/tokenflow/packages/mcp/simple-server.js"],
-      "env": {
-        "BRIDGE_URL": "http://localhost:4000"
-      }
-    }
-  }
-}
-```
+#### **Automatic Setup (Recommended)**
+1. **Open the project** in Cursor
+2. **Restart Cursor** to load the MCP server configuration
+3. **Verify connection** - you should see MCP tools available
+
+#### **Manual Setup (Alternative)**
+If automatic setup doesn't work, manually configure Cursor:
+
+1. **Open Cursor Settings** → **Tools & Integrations** → **New MCP server**
+2. **Configure with these values**:
+   ```json
+   {
+     "name": "tokenflow",
+     "command": "node",
+     "args": ["/path/to/tokenflow/packages/mcp/simple-server.js"],
+     "env": {
+       "BRIDGE_URL": "http://localhost:4000"
+     }
+   }
+   ```
+   > **Note**: Replace `/path/to/tokenflow/` with your actual project path
+
+#### **Project-Specific Configuration**
+The `.cursorrules` file in this project root provides:
+- ✅ **Automatic MCP server setup** when project is opened
+- ✅ **Relative paths** that work for any user
+- ✅ **Version-controlled configuration** shared with the team
+- ✅ **Project isolation** - only active in this project
 
 ## 🎯 Usage Examples
 
