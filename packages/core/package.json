@@ -1,0 +1,21 @@
+{
+  "name": "@tokenflow/core",
+  "version": "1.0.0",
+  "description": "Core token processing engine for Tokenflow",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node generate-flat-aliases.js",
+    "build:tokens": "node generate-flat-aliases.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "style-dictionary": "^5.0.1",
+    "mathjs": "^14.5.3"
+  },
+  "keywords": [
+    "design-tokens",
+    "style-dictionary",
+    "token-processing"
+  ]
+} 

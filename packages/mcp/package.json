@@ -1,0 +1,26 @@
+{
+  "name": "@tokenflow/mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Tokenflow development tool integration",
+  "main": "simple-server.js",
+  "scripts": {
+    "start": "node simple-server.js",
+    "dev": "nodemon simple-server.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "dotenv": "^17.2.0",
+    "node-fetch": "^3.3.2",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "development-tools"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@tokenflow/dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for Tokenflow token monitoring",
+  "scripts": {
+    "start": "echo \"Dashboard served by bridge server\" && exit 0",
+    "dev": "echo \"Dashboard served by bridge server\" && exit 0",
+    "build": "echo \"No build required for static dashboard\" && exit 0",
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "echo \"No clean required\" && exit 0"
+  },
+  "keywords": [
+    "dashboard",
+    "token-monitoring",
+    "web-interface"
+  ]
+} 

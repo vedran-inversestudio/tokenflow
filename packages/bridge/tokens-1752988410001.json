@@ -1,0 +1,20 @@
+{
+  "raw": {
+    "test-websocket": "value",
+    "color-primary": "#007AFF"
+  },
+  "filtered": {
+    "tokenStudio": {},
+    "variables": {},
+    "styles": {},
+    "cleanTokens": {
+      "test-websocket": "value",
+      "color-primary": "#007AFF"
+    }
+  },
+  "selection": null,
+  "metadata": {
+    "projectId": "default"
+  },
+  "extractedAt": "2025-07-20T05:13:29.999Z"
+}
