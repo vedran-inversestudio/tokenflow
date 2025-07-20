@@ -1,272 +1,360 @@
-# Tokenflow - Design Token Pipeline
+# Tokenflow - Real-Time Design Token Pipeline
 
-A comprehensive design token pipeline that integrates Figma/Token Studio tokens with your codebase and Storybook, featuring real-time token extraction via MCP server integration.
+A comprehensive design token pipeline that extracts tokens from Figma in real-time and provides them to your development workflow through a unified monorepo architecture.
 
-## 🚀 Quick Start
+## 🎉 What's New
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+- **Real-time token extraction** from Figma with instant dashboard updates
+- **Monorepo architecture** with organized packages and apps
+- **WebSocket integration** for live token updates without page refresh
+- **MCP server integration** for development tool connectivity
+- **Clean token filtering** and processing pipeline
 
-2. **Start the MCP server:**
-   ```bash
-   npm run mcp
-   ```
-
-3. **Build tokens:**
-   ```bash
-   npm run tokens:all
-   ```
-
-4. **Start Storybook:**
-   ```bash
-   npm run storybook
-   ```
-
-## 🔗 MCP Server Integration
-
-The Tokenflow project includes an integrated MCP (Model Context Protocol) server that connects Cursor to the Tokenflow Bridge, enabling seamless design token extraction from Figma.
-
-### 🛠️ MCP Server Setup
-
-#### **Option 1: Integrated Setup (Recommended)**
-The MCP server is already integrated into this project:
-
-```bash
-# Start the MCP server
-npm run mcp
-
-# Or navigate to the server directory
-cd mcp-server && npm start
-```
-
-#### **Option 2: Global MCP Server**
-For use across multiple projects, set up a global MCP server:
-
-1. **Clone the tokenflow-bridge project:**
-   ```bash
-   git clone <tokenflow-bridge-repo>
-   cd tokenflow-bridge
-   ```
-
-2. **Install and start the MCP server:**
-   ```bash
-   cd mcp-server
-   npm install
-   npm start
-   ```
-
-3. **Configure Cursor globally:**
-   Add to your Cursor settings:
-   ```json
-   {
-     "mcpServers": {
-       "tokenflow": {
-         "command": "node",
-         "args": ["/path/to/tokenflow-bridge/mcp-server/server.js"],
-         "env": {}
-       }
-     }
-   }
-   ```
-
-#### **Option 3: Project-specific Setup**
-Copy the MCP server to your project:
-
-1. **Copy the MCP server:**
-   ```bash
-   cp -r mcp-server/ your-project/
-   ```
-
-2. **Add to package.json:**
-   ```json
-   {
-     "scripts": {
-       "mcp": "cd mcp-server && npm start"
-     }
-   }
-   ```
-
-3. **Configure Cursor for the project:**
-   Create `.cursorrules` in your project root:
-   ```json
-   {
-     "mcpServers": {
-       "tokenflow": {
-         "command": "node",
-         "args": ["./mcp-server/server.js"],
-         "env": {}
-       }
-     }
-   }
-   ```
-
-### 🌐 Bridge Server Configuration
-
-#### **Local Development:**
-- **URL**: `http://localhost:4000`
-- **Use case**: Local development and testing
-- **Setup**: Run the bridge server locally
-
-#### **Remote Projects:**
-- **URL**: Deploy to Vercel/Netlify
-- **Use case**: Production environments
-- **Setup**: Deploy bridge server and update MCP configuration
-
-#### **Multiple Projects:**
-- Each project can have its own bridge server
-- Configure different URLs in MCP server settings
-- Use environment variables for dynamic configuration
-
-### 🔧 Cursor Integration
-
-#### **Automatic Integration:**
-The MCP server automatically connects to your bridge URL and provides:
-- Real-time token access from Figma
-- Component generation with accurate styling
-- Bridge server monitoring
-- WebSocket integration for live updates
-
-#### **Manual Configuration:**
-If automatic integration doesn't work, manually configure Cursor:
-
-1. **Open Cursor settings**
-2. **Add MCP server configuration:**
-   ```json
-   {
-     "mcpServers": {
-       "tokenflow": {
-         "command": "node",
-         "args": ["/path/to/mcp-server/server.js"],
-         "env": {
-           "BRIDGE_URL": "http://localhost:4000"
-         }
-       }
-     }
-   }
-   ```
-
-### 📋 Available MCP Tools
-
-Once connected, you can use these commands in Cursor:
-
-- `/getCurrentTokens` - Get latest token data
-- `/getTokenData` - Detailed token breakdown
-- `/generateComponent` - Generate React/TypeScript components
-- `/getBridgeStatus` - Check bridge server health
-- `/watchForUpdates` - Monitor real-time updates
-
-### 🚨 Troubleshooting
-
-#### **MCP Server Issues:**
-```bash
-# Check if MCP server is running
-curl http://localhost:4000/api/status
-
-# Restart MCP server
-npm run mcp
-
-# Check logs
-cd mcp-server && npm run dev
-```
-
-#### **Bridge Server Issues:**
-```bash
-# Check bridge server status
-curl http://localhost:4000/api/tokens
-
-# Restart bridge server
-# (Follow bridge server documentation)
-```
-
-#### **Cursor Integration Issues:**
-1. **Verify MCP server is running**
-2. **Check Cursor configuration**
-3. **Restart Cursor**
-4. **Check network connectivity**
-
-## 📁 Project Structure
+## 🏗️ Monorepo Structure
 
 ```
 tokenflow/
-├── mcp-server/           # MCP server for Cursor integration
-│   ├── server.js         # Main MCP server
-│   ├── package.json      # MCP server dependencies
-│   └── README.md         # MCP server documentation
-├── src/
-│   ├── tokens/           # Design token definitions
-│   ├── components/       # Storybook components
-│   └── utils/            # Utility functions
-├── public/               # Static assets
-├── .storybook/           # Storybook configuration
-├── generate-flat-aliases.js    # Token flattening script
-├── postprocess-sanitize-tokens-css.js  # CSS post-processing
-└── style-dictionary.config.mjs # Style Dictionary config
+├── apps/
+│   ├── dashboard/          # Real-time token dashboard
+│   └── storybook/          # Component documentation
+├── packages/
+│   ├── bridge/             # Bridge server with WebSocket
+│   ├── mcp/                # MCP server for dev tools
+│   ├── plugin/             # Figma plugin
+│   └── core/               # Core token processing
+├── docs/                   # Project documentation
+└── scripts/                # Utility scripts
 ```
 
-## 🔄 Token Pipeline
+## 🚀 Quick Start
 
-1. **Extract**: Figma plugin extracts tokens
-2. **Bridge**: Local API bridge processes tokens
-3. **MCP**: MCP server provides tokens to Cursor
-4. **Flatten**: Generate flat alias tokens
-5. **Build**: Style Dictionary generates CSS
-6. **Sanitize**: Post-process CSS for compatibility
-7. **Integrate**: Use in Storybook components
+### 1. Install Dependencies
+
+```bash
+# Install root dependencies
+npm install
+
+# Install package dependencies
+npm run install:all
+```
+
+### 2. Start the Bridge Server
+
+```bash
+# Start bridge server (runs on port 4000)
+cd packages/bridge && npm start
+```
+
+### 3. Start the Dashboard
+
+```bash
+# Open dashboard in browser
+open http://localhost:4000
+```
+
+### 4. Upload Figma Plugin
+
+1. Open Figma
+2. Go to Plugins → Development → Import plugin from manifest
+3. Select `packages/plugin/manifest.json`
+4. Run the plugin to extract tokens
+
+## 🔄 Real-Time Token Pipeline
+
+```
+Figma Plugin → Bridge Server → Dashboard (Real-time) → MCP Server
+     ↓              ↓              ↓                    ↓
+  Extract      Store & Filter   Visual Display    Dev Tools Access
+  Tokens       Clean Tokens     Real-time Updates  Cursor Integration
+```
+
+### How It Works
+
+1. **Figma Plugin** (`packages/plugin/`)
+   - Extracts tokens from Token Studio
+   - Filters and cleans token data
+   - Sends to bridge server via API
+
+2. **Bridge Server** (`packages/bridge/`)
+   - Receives tokens via REST API
+   - Stores tokens with timestamps
+   - Broadcasts updates via WebSocket
+   - Serves dashboard and API endpoints
+
+3. **Dashboard** (`apps/dashboard/`)
+   - Real-time token display
+   - WebSocket connection for live updates
+   - Token history and project management
+
+4. **MCP Server** (`packages/mcp/`)
+   - Connects to bridge server
+   - Provides tokens to development tools
+   - Enables Cursor integration
+
+## 🛠️ Development Setup
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- Figma account with Token Studio plugin
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/vedran-inversestudio/tokenflow.git
+cd tokenflow
+
+# Install dependencies
+npm install
+
+# Install package dependencies
+npm run install:all
+```
+
+### Running Services
+
+#### Bridge Server
+```bash
+cd packages/bridge
+npm start
+# Server runs on http://localhost:4000
+```
+
+#### MCP Server
+```bash
+cd packages/mcp
+npm start
+# Connects to bridge server automatically
+```
+
+#### Dashboard
+```bash
+# Dashboard is served by bridge server
+open http://localhost:4000
+```
+
+#### Storybook
+```bash
+cd apps/storybook
+npm start
+# Storybook runs on http://localhost:6006
+```
+
+## 📦 Package Details
+
+### `packages/bridge/` - Bridge Server
+- **Purpose**: Central token storage and API server
+- **Features**: 
+  - REST API for token storage
+  - WebSocket server for real-time updates
+  - Dashboard serving
+  - Token filtering and processing
+- **Port**: 4000
+- **Key files**: `server.cjs`, `public/index.html`
+
+### `packages/plugin/` - Figma Plugin
+- **Purpose**: Extract tokens from Figma/Token Studio
+- **Features**:
+  - Token Studio integration
+  - Clean token filtering
+  - API communication with bridge
+- **Key files**: `manifest.json`, `code.js`, `ui.html`
+
+### `packages/mcp/` - MCP Server
+- **Purpose**: Development tool integration
+- **Features**:
+  - Bridge server connection
+  - Token access for Cursor
+  - Real-time monitoring
+- **Key files**: `simple-server.js`, `cursor-config.json`
+
+### `packages/core/` - Core Processing
+- **Purpose**: Token processing and components
+- **Features**:
+  - Style Dictionary configuration
+  - Token flattening and aliases
+  - CSS post-processing
+  - Storybook components
+- **Key files**: `style-dictionary.config.mjs`, `src/components/`
+
+### `apps/dashboard/` - Token Dashboard
+- **Purpose**: Real-time token visualization
+- **Features**:
+  - WebSocket connection
+  - Live token updates
+  - Token history
+  - Project management
+- **Key files**: `index.html`
+
+### `apps/storybook/` - Component Documentation
+- **Purpose**: Component development and documentation
+- **Features**:
+  - Component stories
+  - Token integration
+  - Design system documentation
+- **Key files**: `.storybook/`, `src/stories/`
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create `.env` files in package directories as needed:
+
+```bash
+# packages/bridge/.env
+PORT=4000
+NODE_ENV=development
+
+# packages/mcp/.env
+BRIDGE_URL=http://localhost:4000
+PROJECT_ID=default
+```
+
+### Cursor Integration
+
+Configure Cursor to use the MCP server:
+
+```json
+{
+  "mcpServers": {
+    "tokenflow": {
+      "command": "node",
+      "args": ["/path/to/tokenflow/packages/mcp/simple-server.js"],
+      "env": {
+        "BRIDGE_URL": "http://localhost:4000"
+      }
+    }
+  }
+}
+```
 
 ## 🎯 Usage Examples
 
-### **Using MCP Tools in Cursor:**
+### Extract Tokens from Figma
+
+1. **Start bridge server**:
+   ```bash
+   cd packages/bridge && npm start
+   ```
+
+2. **Open dashboard**:
+   ```bash
+   open http://localhost:4000
+   ```
+
+3. **Run Figma plugin**:
+   - Open Figma
+   - Run Tokenflow plugin
+   - Tokens appear instantly in dashboard
+
+### Build Components with Tokens
 
 ```bash
-# Get current tokens from Figma
-/getCurrentTokens
+# Navigate to core package
+cd packages/core
 
-# Generate a button component
-/generateComponent componentType="button" componentName="PrimaryButton"
+# Generate flat token aliases
+node generate-flat-aliases.js
 
-# Check bridge server status
-/getBridgeStatus
-```
+# Build CSS tokens
+npm run build:tokens
 
-### **Building Tokens:**
-
-```bash
-# Build and process all tokens
-npm run tokens:all
-
-# Build only
-npm run tokens:build
-
-# Post-process only
-npm run tokens:postprocess
-```
-
-### **Storybook Development:**
-
-```bash
 # Start Storybook
-npm run storybook
-
-# Access at http://localhost:6006
+cd ../../apps/storybook && npm start
 ```
 
-## 📚 Documentation
+### Use MCP Server with Cursor
 
-- **MCP Server**: See `mcp-server/README.md` for detailed MCP server documentation
-- **Bridge Server**: See bridge server documentation for API details
-- **Token Pipeline**: See token processing scripts for customization
-- **Components**: See Storybook stories for component usage
+```bash
+# Start MCP server
+cd packages/mcp && npm start
+
+# In Cursor, use MCP tools:
+# /getCurrentTokens - Get latest tokens
+# /getBridgeStatus - Check server status
+# /watchForUpdates - Monitor real-time updates
+```
+
+## 🚨 Troubleshooting
+
+### Bridge Server Issues
+
+```bash
+# Check if server is running
+curl http://localhost:4000/health
+
+# Check server logs
+cd packages/bridge && npm start
+
+# Kill existing processes
+pkill -f "node.*server.cjs"
+```
+
+### WebSocket Connection Issues
+
+```bash
+# Test WebSocket connection
+curl -i -N -H "Connection: Upgrade" -H "Upgrade: websocket" \
+     -H "Sec-WebSocket-Key: SGVsbG8sIHdvcmxkIQ==" \
+     -H "Sec-WebSocket-Version: 13" \
+     http://localhost:4000
+```
+
+### Plugin Issues
+
+1. **Check plugin manifest**: Verify `packages/plugin/manifest.json`
+2. **Re-upload plugin**: Remove and re-import in Figma
+3. **Check console**: Open browser dev tools for errors
+
+### MCP Server Issues
+
+```bash
+# Check MCP server status
+cd packages/mcp && npm start
+
+# Test bridge connection
+node test-bridge-directly.js
+
+# Check configuration
+cat cursor-config.json
+```
+
+## 📚 API Reference
+
+### Bridge Server API
+
+- `GET /health` - Server health check
+- `GET /api/tokens` - Get latest tokens
+- `POST /api/tokens` - Store new tokens
+- `GET /api/projects` - List projects
+- `GET /api/history` - Token history
+
+### WebSocket Events
+
+- `tokenData` - New token data received
+- `connection` - Client connected
+- `disconnect` - Client disconnected
 
 ## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Test the MCP integration
+4. Test the pipeline
 5. Submit a pull request
 
 ## 📄 License
 
-MIT License - see LICENSE file for details.
+This project is licensed under the MIT License.
+
+## 🆘 Support
+
+- **Issues**: Create GitHub issues for bugs
+- **Discussions**: Use GitHub discussions for questions
+- **Documentation**: Check `docs/` folder for detailed guides
+
+---
+
+**🎉 Tokenflow is now a production-ready design token pipeline with real-time capabilities!**

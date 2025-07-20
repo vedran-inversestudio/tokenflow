@@ -8,6 +8,7 @@
     "apps/*"
   ],
   "scripts": {
+    "install:all": "npm install && cd packages/bridge && npm install && cd ../mcp && npm install && cd ../core && npm install && cd ../../apps/dashboard && npm install && cd ../storybook && npm install",
     "dev": "concurrently \"npm run dev:bridge\" \"npm run dev:mcp\" \"npm run dev:dashboard\" \"npm run dev:storybook\"",
     "dev:bridge": "cd packages/bridge && npm start",
     "dev:mcp": "cd packages/mcp && npm start",
